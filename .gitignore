@@ -1,4 +1,4 @@
-/.idea
+.idea
 /.sculpin/
 /app/cache/*
 /app/config/sculpin_kernel_*.yml
