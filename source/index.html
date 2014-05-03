@@ -1,29 +1,43 @@
 ---
 layout: default
 title: Home
+nav: home
 generator: pagination
 pagination:
     max_per_page: 3
 use:
     - posts
+    - posts_tags
+    - posts_categories
 ---
 {% for post in page.pagination.items %}
-    <article>
-        <header>
-            <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
-        </header>
-        <div>
-            {{ post.blocks.content|raw }}
+<div class="blog-item">
+    <!--<img class="img-responsive img-blog" src="{{ site.url }}/images/blog/blog2.jpg" width="100%" alt="" />-->
+    <div class="blog-content">
+        <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+        <div class="entry-meta">
+            {% if post.author %}<span><i class="icon-user"></i> <a href="#">{{ post.author }}</a></span>{% endif %}
+            <span><i class="icon-folder-close"></i> {% for category in post.meta.categories %}
+            <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}</span>
+            <span><i class="icon-calendar"></i> Sept 16th, 2012</span>
         </div>
-        {% if post.meta.tags %}
-            <p class="tags">
-            Tags:
-            {% for tag in post.meta.tags %}
-            <a href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+
+        {{ post.blocks.content|raw }}
+
+        <hr>
+
+        <div class="tags">
+            <i class="icon-tags"></i> Tags {% for tag in post.meta.tags %}
+            <a class="btn btn-xs btn-primary" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
-            </p>
-        {% endif %}
-    </article>
+        </div>
+
+    </div>
+
+
+</div>
+
 {% endfor %}
 {% if page.pagination.previous_page or page.pagination.next_page %}
     <nav>

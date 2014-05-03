@@ -1,8 +1,11 @@
 ---
 title: Syntax Highlighting
+author: erikaheidi
 categories:
     - features
-
+use:
+    - posts_tags
+    - posts_categories
 ---
 You're all programmers, right? And you're writing code snippets on your Sculpin
 powered blog? Yeah. So you want some highlighting with your static site generation?

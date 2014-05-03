@@ -1,5 +1,22 @@
-# The contents of this file are parsed and made available as
-# via `site.*`. So for example, {{ site.title }} can be used
-# in a template to get the contents of the `title` key.
-title: Sculpin Blog Skeleton
-subtitle: To Get You Started
+title: dev-human
+subtitle: Non-technical content for humans who code
+
+#######################################################################################################
+# The authors. Include your info here, under the "authors" key, using the following template:
+#
+#  erikaheidi:
+#      name: Your Name
+#      url: http://yourURL.com
+#      avatar: http://url.to.a.valid/avatar.jpeg
+#      twitter: http://twitter.com/erikaheidi
+#      bio: this is a short bio, it should not be so long, just a quick info that defines you.
+#
+# Please provide at least "name" and "bio" .
+###################################################################################################
+authors:
+  erikaheidi:
+      name: Erika Heidi
+      url: http://erikaheidi.com
+      avatar: https://pbs.twimg.com/profile_images/451042845206380545/0GHPdHhs.jpeg
+      twitter: http://twitter.com/erikaheidi
+      bio: independent web developer && open source enthusiast. sometimes writer, sometimes speaker. loves cats, elephpants and unicorns.

@@ -1,3 +1,4 @@
+/.idea
 /.sculpin/
 /app/cache/*
 /app/config/sculpin_kernel_*.yml
@@ -5,4 +6,5 @@
 /app/logs/*
 /output_*/
 /source/components/
+/template
 s3.conf
