@@ -5,7 +5,7 @@ categories:
     - News
 tags:
     - release
-    - participation
+    - contribute
 use:
     - posts_tags
     - posts_categories
