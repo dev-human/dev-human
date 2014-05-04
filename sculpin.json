@@ -1,7 +1,7 @@
 {
     "name": "dev-human",
     "description": "Non-technical resources for humans who code",
-    "type": "sculpin-skeleton",
+    "type": "project",
     "license": "MIT",
     "authors": [
         {

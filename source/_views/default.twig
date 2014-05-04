@@ -28,57 +28,59 @@
     <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/assets/images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 <body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=144716315690681";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=144716315690681";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 
-{% include "main_nav.twig" %}
+    {% include "main_nav.twig" %}
 
-<section id="blog" class="container">
-    <div class="row">
+    <section id="blog" class="container">
+        <div class="row">
 
-        <aside class="col-sm-4 col-sm-push-8">
-            {% include "sidebar.twig" %}
-        </aside>
+            <aside class="col-sm-4 col-sm-push-8">
+                {% include "sidebar.twig" %}
+            </aside>
 
-        <div class="col-sm-8 col-sm-pull-4">
-            <div class="blog">
-                {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
-            </div>
-        </div><!--/.col-md-8-->
-    </div><!--/.row-->
-</section><!--/#blog-->
+            <div class="col-sm-8 col-sm-pull-4">
+                <div class="blog">
+                    {% block content_wrapper %}{% block content %}{% endblock %}{% endblock %}
+                </div>
+            </div><!--/.col-md-8-->
+        </div><!--/.row-->
+    </section><!--/#blog-->
 
-{% include "footer.twig" %}
+    {% include "footer.twig" %}
 
-<script src="{{ site.url }}/assets/js/jquery.js"></script>
-<script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
-<script src="{{ site.url }}/assets/js/jquery.prettyPhoto.js"></script>
-<script src="{{ site.url }}/assets/js/main.js"></script>
+    <script src="{{ site.url }}/assets/js/jquery.js"></script>
+    <script src="{{ site.url }}/assets/js/bootstrap.min.js"></script>
+    <script src="{{ site.url }}/assets/js/jquery.prettyPhoto.js"></script>
+    <script src="{{ site.url }}/assets/js/main.js"></script>
 
-{% block scripts %}
-{% endblock %}
+    {% block scripts %}
+    {% endblock %}
 
-{% if site.google_analytics_tracking_id %}
-<script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', '{{ site.google_analytics_tracking_id }}']);
-    _gaq.push(['_trackPageview']);
+    {% if site.google_analytics_tracking_id %}
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', '{{ site.google_analytics_tracking_id }}']);
+            _gaq.push(['_trackPageview']);
 
-    (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-</script>
-{% endif %}
-<script src="{{ site.url }}/assets/highlightjs/highlight.pack.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+            (function() {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+    {% endif %}
+    <script src="{{ site.url }}/assets/highlightjs/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
 
-</body>
+    </body>
 </html>

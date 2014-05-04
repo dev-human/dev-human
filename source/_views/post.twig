@@ -1,51 +1,47 @@
 {% extends "default" %}
+
 {% block content_wrapper %}
+    <div class="blog-item">
+        <!--<img class="img-responsive img-blog" src="{{ site.url }}/images/blog/blog2.jpg" width="100%" alt="" />-->
+        <div class="blog-content">
+            <h3>{{ page.title }}</h3>
+            <div class="entry-meta">
+                {% if page.author %} {% if site.authors[page.author] %} {% set author = site.authors[page.author] %} {% endif %} {% endif %}
+                {% if author %}<span><i class="icon-user"></i> <a href="{{ author.url }}" target="_blank">{{ author.name }}</a></span>{% endif %}
+                <span><i class="icon-folder-close"></i> {% for category in page.categories %}
+                <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}</span>
+                <span><i class="icon-calendar"></i> Sept 16th, 2012</span>
+            </div>
 
-<div class="blog-item">
-    <!--<img class="img-responsive img-blog" src="{{ site.url }}/images/blog/blog2.jpg" width="100%" alt="" />-->
-    <div class="blog-content">
-        <h3>{{ page.title }}</h3>
-        <div class="entry-meta">
-            {% if page.author %} {% if site.authors[page.author] %} {% set author = site.authors[page.author] %} {% endif %} {% endif %}
-            {% if author %}<span><i class="icon-user"></i> <a href="{{ author.url }}" target="_blank">{{ author.name }}</a></span>{% endif %}
-            <span><i class="icon-folder-close"></i> {% for category in page.categories %}
-            <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}</span>
-            <span><i class="icon-calendar"></i> Sept 16th, 2012</span>
+            {{ page.blocks.content|raw }}
+
+            <hr>
+
+            <div class="tags">
+                <i class="icon-tags"></i> Tags {% for tag in page.tags %}
+                <a class="btn btn-xs btn-primary" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+                {% endfor %}
+            </div>
+
+            <p>&nbsp;</p>
+
+            {% if author %}
+                {% include 'author.twig' %}
+            {% endif %}
+
+            {% if page.previous_post or page.next_post %}
+                <nav class="article">
+                    <ul>
+                        {% if page.next_post %}
+                            <li>Next: <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a></li>
+                        {% endif %}
+                        {% if page.previous_post %}
+                            <li>Previous: <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a></li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            {% endif %}
         </div>
-
-        {{ page.blocks.content|raw }}
-
-        <hr>
-
-        <div class="tags">
-            <i class="icon-tags"></i> Tags {% for tag in page.tags %}
-            <a class="btn btn-xs btn-primary" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
-            {% endfor %}
-        </div>
-
-        <p>&nbsp;</p>
-
-        {% if author %}
-            {% include 'author.twig' %}
-        {% endif %}
-
-        {% if page.previous_post or page.next_post %}
-        <nav class="article">
-            <ul>
-                {% if page.next_post %}
-                <li>Next: <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a></li>
-                {% endif %}
-                {% if page.previous_post %}
-                <li>Previous: <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a></li>
-                {% endif %}
-            </ul>
-        </nav>
-        {% endif %}
-
     </div>
-
-
-</div>
-
 {% endblock %}
