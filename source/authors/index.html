@@ -12,10 +12,8 @@ use:
         {% for authorhandle,posts in data.posts_authors %}
             {% if site.authors[authorhandle] %}
                 {% set author = site.authors[authorhandle] %}
+                {% include 'author_box.twig' %}
             {% endif %}
-
-            {% if author %} {% include 'author_box.twig' %} {% endif %}
-
         {% endfor %}
     </div>
 </div>
