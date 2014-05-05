@@ -1,45 +1,44 @@
-    <div class="widget search">
-        <form role="form">
-            <div class="input-group">
-                <input type="text" class="form-control" autocomplete="off" placeholder="Search">
-                            <span class="input-group-btn">
-                                <button class="btn btn-danger" type="button"><i class="icon-search"></i></button>
-                            </span>
-            </div>
-        </form>
-    </div><!--/.search-->
-
-    <div class="widget">
-        <h3>About</h3>
-        <p><strong>dev-human</strong> is a collaborative blog created by developers, for developers, focused on non-technical, lightning content. [ <a href="{{ site.url }}/about">read more</a> ]</p>
-    </div>
-
-    <div class="widget categories">
-        <h3>Categories</h3>
-        <div class="row">
-            <div class="col-sm-6">
-                <ul class="arrow">
-                    {% for category,posts in data.posts_categories %}
-                    <li><a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a></li>
-                    {% endfor %}
-                </ul>
-            </div>
-
+<div class="widget search">
+    <form role="form">
+        <div class="input-group">
+            <input type="text" class="form-control" autocomplete="off" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-danger" type="button"><i class="icon-search"></i></button>
+                        </span>
         </div>
-    </div><!--/.categories-->
-    <div class="widget tags">
-        <h3>Tag Cloud</h3>
-        <ul class="tag-cloud">
-            {% for tag,posts in data.posts_tags %}
-            <li><a class="btn btn-xs btn-primary" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a></li>
-            {% endfor %}
-        </ul>
-    </div><!--/.tags-->
+    </form>
+</div><!--/.search-->
 
-    <div class="widget facebook-fanpage">
-        <h3>Facebook Fanpage</h3>
-        <div class="widget-content">
-            <div class="fb-like-box" data-href="https://www.facebook.com/devhuman" data-width="292" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+<div class="widget">
+    <h3>About</h3>
+    <p><strong>dev-human</strong> is a collaborative blog created by developers, for developers, focused on non-technical, lightning content. [ <a href="{{ site.url }}/about">read more</a> ]</p>
+</div>
+
+<div class="widget categories">
+    <h3>Categories</h3>
+    <div class="row">
+        <div class="col-sm-6">
+            <ul class="arrow">
+                {% for category,posts in data.posts_categories %}
+                <li><a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a></li>
+                {% endfor %}
+            </ul>
         </div>
+
     </div>
-</aside><!-- end sidebar -->
+</div><!--/.categories-->
+<div class="widget tags">
+    <h3>Tag Cloud</h3>
+    <ul class="tag-cloud">
+        {% for tag,posts in data.posts_tags %}
+        <li><a class="btn btn-xs btn-primary" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a></li>
+        {% endfor %}
+    </ul>
+</div><!--/.tags-->
+
+<div class="widget facebook-fanpage">
+    <h3>Facebook Fanpage</h3>
+    <div class="widget-content">
+        <div class="fb-like-box" data-href="https://www.facebook.com/devhuman" data-width="292" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>
+    </div>
+</div>
