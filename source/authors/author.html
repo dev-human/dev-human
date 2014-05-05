@@ -3,7 +3,9 @@ layout: default
 title: Author Archive
 nav: authors
 generator: posts_author_index
-
+use:
+    - posts_categories
+    - posts_tags
 ---
 {% block title %}{{ page.title }}: {{ page.author }}{% endblock %}
 
