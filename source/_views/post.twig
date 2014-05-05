@@ -1,4 +1,5 @@
 {% extends "default" %}
+
 {% block content_wrapper %}
 
 <div class="blog-item">
@@ -17,7 +18,7 @@
             <span><i class="icon-folder-close"></i> {% for category in page.categories %}
             <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}</span>
-            <span><i class="icon-calendar"></i> Sept 16th, 2012</span>
+            <!--<span><i class="icon-calendar"></i> Sept 16th, 2012</span>-->
         </div>
 
         {{ page.blocks.content|raw }}
@@ -37,21 +38,17 @@
         {% endif %}
 
         {% if page.previous_post or page.next_post %}
-        <nav class="article">
-            <ul>
-                {% if page.next_post %}
-                <li>Next: <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a></li>
-                {% endif %}
-                {% if page.previous_post %}
-                <li>Previous: <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a></li>
-                {% endif %}
-            </ul>
-        </nav>
+            <nav class="article">
+                <ul>
+                    {% if page.next_post %}
+                        <li>Next: <a class="next" href="{{ site.url }}{{ page.next_post.url }}" title="{{ page.next_post.title }}"><span class="title">{{ page.next_post.title }}</span></a></li>
+                    {% endif %}
+                    {% if page.previous_post %}
+                        <li>Previous: <a class="previous" href="{{ site.url }}{{ page.previous_post.url }}" title="{{ page.previous_post.title }}"><span class="title">{{ page.previous_post.title }}</span></a></li>
+                    {% endif %}
+                </ul>
+            </nav>
         {% endif %}
-
     </div>
-
-
 </div>
-
 {% endblock %}
