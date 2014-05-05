@@ -1,5 +1,7 @@
 title: dev-human
 subtitle: Non-technical content for humans who code
+google_analytics_tracking_id: UA-50664641-1
+default_date_format: M d, Y
 
 #######################################################################################################
 # The authors. Include your info here, under the "authors" key, using the following template:
@@ -12,7 +14,7 @@ subtitle: Non-technical content for humans who code
 #      bio: this is a short bio, it should not be so long, just a quick info that defines you.
 #
 # Please provide at least "name" and "bio" .
-###################################################################################################
+#######################################################################################################
 authors:
   erikaheidi:
       name: Erika Heidi

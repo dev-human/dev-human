@@ -1,6 +1,7 @@
 ---
 title: Bye Coding!
-author: cordoval
+authors:
+    - cordoval
 categories:
     - future
 tags:

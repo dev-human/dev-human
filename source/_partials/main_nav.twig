@@ -15,14 +15,15 @@
                 <li {% if page.nav == "about" %} class="active" {% endif %}><a href="{{ site.url }}/about">About</a></li>
                 <li {% if page.nav == "contribute" %} class="active" {% endif %}><a href="{{ site.url }}/contribute">Contribute</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Categories <i class="icon-angle-down"></i></a>
+                    <a href="{{ site.url }}/blog/categories" class="dropdown-toggle" data-toggle="dropdown">Categories <i class="icon-angle-down"></i></a>
                     <ul class="dropdown-menu">
                         {% for category,posts in data.posts_categories %}
-                        <li><a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a></li>
+                        <li><a href="{{ site.url }}/entries/categories/{{ category|url_encode(true) }}">{{ category }}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
-                <li {% if page.nav == "archive" %} class="active" {% endif %}><a href="{{ site.url }}/blog">Posts Archive</a></li>
+                <li {% if page.nav == "authors" %} class="active" {% endif %}><a href="{{ site.url }}/authors">Authors</a></li>
+                <li {% if page.nav == "archive" %} class="active" {% endif %}><a href="{{ site.url }}/entries">Posts Archive</a></li>
             </ul>
         </div>
     </div>

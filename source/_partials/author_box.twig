@@ -3,12 +3,14 @@
     <div class="media">
         {% if author.avatar %}
             <div class="pull-left">
-                <img class="avatar img-thumbnail" src="{{ author.avatar }}" width="90" height="90" alt="">
+                <a href="{{ site.url }}/authors/{{ authorhandle }}">
+                    <img class="avatar img-thumbnail" src="{{ author.avatar }}" width="90" height="90" alt="">
+                </a>
             </div>
         {% endif %}
         <div class="media-body">
             <div class="media-heading">
-                <h4>{{ author.name }}
+                <h4><a href="{{ site.url }}/authors/{{ authorhandle }}">{{ author.name }}</a>
                     {% if author.twitter %}<a href="{{ author.twitter }}"> <i class="icon icon-twitter"></i></a>{% endif %}
                     {% if author.url %}<a href="{{ author.url }}"><i class="icon icon-globe"></i></a>{% endif %}
                 </h4>

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Authors
+nav: authors
+use:
+    - posts_authors
+    - posts_categories
+    - posts_tags
+---
+
+<div class="blog-item">
+    <div class="blog-content">
+        <h2>Content Authors</h2>
+        {% for authorhandle,posts in data.posts_authors %}
+            {% if site.authors[authorhandle] %}
+                {% set author = site.authors[authorhandle] %}
+                {% include 'author_box.twig' %}
+            {% endif %}
+        {% endfor %}
+    </div>
+</div>
