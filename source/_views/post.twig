@@ -14,7 +14,7 @@
             <span><i class="icon-folder-close"></i> {% for category in page.categories %}
             <a href="{{ site.url }}/entries/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}</span>
-            <span><i class="icon-calendar"></i> {{ page.date|date('M d, Y') }}</span>
+            <span><i class="icon-calendar"></i> {{ page.date|date(site.default_date_format) }}</span>
         </div>
 
         {{ page.blocks.content|raw }}

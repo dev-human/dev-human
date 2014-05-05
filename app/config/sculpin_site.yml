@@ -1,6 +1,7 @@
 title: dev-human
 subtitle: Non-technical content for humans who code
 google_analytics_tracking_id: UA-50664641-1
+default_date_format: M d, Y
 
 #######################################################################################################
 # The authors. Include your info here, under the "authors" key, using the following template:
