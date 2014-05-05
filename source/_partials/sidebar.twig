@@ -20,7 +20,7 @@
         <div class="col-sm-6">
             <ul class="arrow">
                 {% for category,posts in data.posts_categories %}
-                <li><a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a></li>
+                <li><a href="{{ site.url }}/entries/categories/{{ category|url_encode(true) }}">{{ category }}</a></li>
                 {% endfor %}
             </ul>
         </div>
@@ -31,7 +31,7 @@
     <h3>Tag Cloud</h3>
     <ul class="tag-cloud">
         {% for tag,posts in data.posts_tags %}
-        <li><a class="btn btn-xs btn-primary" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a></li>
+        <li><a class="btn btn-xs btn-primary" href="{{ site.url }}/entries/tags/{{ tag|url_encode(true) }}">{{ tag }}</a></li>
         {% endfor %}
     </ul>
 </div><!--/.tags-->

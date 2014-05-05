@@ -16,11 +16,14 @@ use:
     <div class="blog-content">
         <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
         <div class="entry-meta">
-            {% if post.author %}<span><i class="icon-user"></i> <a href="#">{{ post.author }}</a></span>{% endif %}
+            {% if post.authors %}
+                {% set author_list = post.authors %}
+                {% include 'author_list.twig' %}
+            {% endif %}
             <span><i class="icon-folder-close"></i> {% for category in post.meta.categories %}
-            <a href="{{ site.url }}/blog/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
+            <a href="{{ site.url }}/entries/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}</span>
-            <span><i class="icon-calendar"></i> Sept 16th, 2012</span>
+            <span><i class="icon-calendar"></i> {{ page.date|date('M d, Y') }}</span>
         </div>
 
         {{ post.blocks.content|raw }}
@@ -29,7 +32,7 @@ use:
 
         <div class="tags">
             <i class="icon-tags"></i> Tags {% for tag in post.meta.tags %}
-            <a class="btn btn-xs btn-primary" href="{{ site.url }}/blog/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            <a class="btn btn-xs btn-primary" href="{{ site.doman }}{{ site.url }}/entries/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
             {% endfor %}
         </div>
 

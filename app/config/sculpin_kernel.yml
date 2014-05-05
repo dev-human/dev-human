@@ -1,3 +1,11 @@
 sculpin_content_types:
     posts:
-        permalink: blog/:year/:month/:day/:filename/
+        type: path
+        permalink: entries/:year/:month/:day/:filename/
+        singular_name: entry
+        layout: post
+        enabled: true
+        taxonomies:
+            - tags
+            - categories
+            - authors

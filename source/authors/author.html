@@ -1,0 +1,21 @@
+---
+layout: default
+title: Author Archive
+nav: authors
+generator: posts_author_index
+
+---
+{% block title %}{{ page.title }}: {{ page.author }}{% endblock %}
+
+{% block content %}
+
+    <h1>Posts by {{ page.author }}</h1>
+
+    {% for post in page.author_posts %}
+        <article>
+            <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
+        </article>
+        <hr>
+    {% endfor %}
+
+{% endblock content %}
