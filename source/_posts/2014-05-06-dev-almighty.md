@@ -18,7 +18,7 @@ And the reason is very simple: apart from a computer, we don't need any other ra
 
 Naturally, you need knowledge. But you can get all necessary technical knowledge for free on the Internet! If you want to be a developer, it will be just a matter of time
 and patience. And practice. Can you imagine this being possible for other generations before you? Even today, if you compare programming with any other activities, I
-strongly believe that we have much more resources available for free on the Internet than other professionals. Easy to study, easy to practice. Of course it should
+strongly believe that we have much more resources available for free on the Internet than any other professionals. Easy to study, easy to practice. Of course it should
 be like this, since **we** build the Internet.
 
 In fact, programming is not comparable with any other profession / activity, if you think about it. Where else do you create things only from your ideas? You might think about a
@@ -34,10 +34,10 @@ When my _father_ thinks about entrepreneurship, he thinks about factories (real 
 We don't need to worry about any of this. In fact, there are so many different opportunities today for us, that we don't even need to think about opening a company.
 
 Advertisement (like [Google AdSense](http://google.com/adsense)) and independent book publishing (like [LeanPub](http://leanpub.com)) are great examples on how you can use your programming skills to earn money
-in a completely independent way. No regular contracts, no clients. You have a shitload of work for some time, and after that you can just keep collection your
+in a completely independent way. No regular contracts, no clients. You have a shitload of work for some time, and after that you can just keep collecting your
 royalties.
 
-I'm not saying that it's _easy_. No, whatsoever. Working for a company is much easier, because they tell you what to do and you have your money guaranteed at the end of
+I'm not saying that it's _easy_. No, by no means. Working for a company is much easier, because they tell you what to do and you have your money guaranteed at the end of
 the month. But if you feel that you don't _fit_ in a regular job - like I feel -, going independent is an amazing experience that might completely change your life!
 
 And a final piece of advice: if you want to endure the _independent path_, start slowly - don't just quit your job. You don't know yet if this is what you are looking for - like I said, it's not easy; feels
