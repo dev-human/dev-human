@@ -33,7 +33,7 @@ When my _father_ thinks about entrepreneurship, he thinks about factories (real 
 
 We don't need to worry about any of this. In fact, there are so many different opportunities today for us, that we don't even need to think about opening a company.
 
-Advertisement (Google AdSense and others) and independent publishing (LeanPub and others) are great examples on how you can use your programming skills to earn money
+Advertisement (like [Google AdSense](http://google.com/adsense)) and independent book publishing (like [LeanPub](http://leanpub.com)) are great examples on how you can use your programming skills to earn money
 in a completely independent way. No regular contracts, no clients. You have a shitload of work for some time, and after that you can just keep collection your
 royalties.
 
