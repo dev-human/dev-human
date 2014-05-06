@@ -32,6 +32,7 @@ body {
   background: #f5f5f5;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
+  font-size: 160%;
 }
 h1,
 h2,
@@ -1011,8 +1012,13 @@ ul.social > li > a:hover {
   border-radius: 5px 5px 0 0;
 }
 .blog .blog-item .blog-content {
-  padding: 20px;
+  padding: 40px;
 }
+
+.blog .blog-item p {
+    padding: 8px 0px;
+}
+
 .blog .blog-item h3 {
   margin-top: 0;
 }
