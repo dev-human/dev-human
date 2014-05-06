@@ -3,10 +3,10 @@ title: Bye Coding!
 authors:
     - cordoval
 categories:
-    - future
+    - Life and Code
 tags:
     - participation
-    - crazy
+    - future
 use:
     - posts_tags
     - posts_categories
