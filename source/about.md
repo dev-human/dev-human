@@ -29,7 +29,7 @@ we have similar problems, we have similar stories, and (often) we laugh at the s
 
 ## How you can help
 
-We can't make this project successful without the help of other developers who like to write and produce content. Please check the [**contributing**]({{site.url}}/contribute) section to find out more on how you can help.
+We can't make this project successful without the help of other developers who like to write and produce content. Please check the [**contributing**]({{site.url}}/docs/contribute) section to find out more on how you can help.
 
 ## The Future
 
