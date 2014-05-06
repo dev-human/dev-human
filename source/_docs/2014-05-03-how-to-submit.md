@@ -1,41 +1,15 @@
 ---
-layout: default
-title: Contributing
+title: How to Submit your Article
 nav: contribute
 use:
     - posts_tags
     - posts_categories
 ---
-# Contributing to dev-human
 
-**dev-human** uses [Sculpin](https://sculpin.io/), a static website generator created by [Beau Simensen](https://twitter.com/beausimensen) using [Silex](http://silex.sensiolabs.org/).
-But you don't need to worry about any of this: the only thing you need in order to contribute with an article for **dev-human** is a [GitHub](https://github.com/) account.
-
-The articles are written in **markdown**. You just need to create a new file in the project tree, following some simple rules, and make a pull request to submit your content.
-You don't even need to clone the repository in your local machine - all can be done through the GitHub interface.
-
-If you want to preview your article in the exact way it's going to be published on the website, than you'll need to
-have PHP and Sculpin installed in your local machine. Check our main repository for instructions: [https://github.com/dev-human/dev-human](https://github.com/dev-human/dev-human) .
-
-## Topics
-
-There are a large variety of topics that would be great to have in _dev-human_.
-This list is just to give you a base, a general idea of what we are looking for.
-
-Your personal opinions about:
-
-* how Internet "affects" us
-* productivity
-* dealing with cognitive bias
-* how to feel more fulfilled in life
-* ways to be a better developer
-* ways to be a better person
-
-Again, this is just a very basic starting point. There are many other subjects we could discuss here.
-Feel free to suggest more topics. The most important thing is to target the content to the public you know so well: developers. geeks. tech people. you.
-This just means that you know who is listening will probably enjoy some tech jokes and allegories, eventually some meme gifs and cat content :P
-
-## Detailed Instructions
+Basically, you only need to create a Pull Request. An article is just a markdown file with some specific metadata information
+(title, authors, categories) that will be used to generate the static files in the website. This page contains detailed instructions on how to submit your article via GitHub,
+without the need to clone the repository locally. If you want to run the project in your local machine,
+in order to preview how the article will look like when published, please check the section [Running dev-human locally](/docs/running-locally).
 
 ### 1. Fork the project to your GH account
 
@@ -44,7 +18,7 @@ Click on the "Fork" button and follow the instructions.
 
 ### 2. Navigate to the "_posts" folder, in your forked repo
 
-Go to your forked repository. Navigate to the folder `source/_posts`. You'll see a small plus sign icon that you can use to create a new file in this folder:
+Go to your forked repository. Navigate to the folder `source/_posts`. This is where all posts are located. You'll see a small plus sign icon that you can use to create a new file in this folder:
 
 ![Add a file](/media/contributing/gh_create_new_file.png)
 
@@ -52,23 +26,26 @@ Click on this button and a new page will show up where you can define the file n
 
 ### 3. Set the File Name and Article Meta Data
 
-First of all, the file name must specify the **date**, followed by a name that will be used as the article _slug_.
-So, let's take for example the initial article, "Hello Humans".
+The file name will define the article date and _slug_ (used in the permalink). For instance, the file `2014-05-03-hello-humans.md` will generate
+an article with the following permalink: `http://dev-human.com/entries/2014/05/03/hello-humans`.
 
-The file name is `2014-05-03-hello-humans.md` . This will set the article date for May 03, 2014, and the URL for the
-article - it will be `http://dev-human.com/blog/2014/05/03/hello-humans` .
+The article title, categories and other meta data are defined in a special block, the article _frontmatter_ . It uses YAML, so it's very straightforward.
 
-Now, you need to provide some information, like the article title and your author handle. Use this as a template:
+This is a template you can use to create a new article:
 
 ~~~~
 ---
-title: Hello Humans!
-author: erikaheidi
+title: Your Article Title
+authors:
+    - your_author_handle
+source: http://url_to_original_post_if_applicable
 categories:
-    - News
+    - Category 1
+    - Category 2
 tags:
-    - release
-    - participation
+    - Tag 1
+    - Tag 2
+    - Tag 3
 use:
     - posts_tags
     - posts_categories
@@ -79,12 +56,15 @@ Your article content goes here. Do wathever you want with markdown.
 ~~~~
 
 * **title**: The Article title
-* **author** : Your author _handle_. This will be used to identify you as author, when you add yourself to the **authors list**.
+* **authors** : One or more authors. When rendering the article, we'll fetch data from the **authors list** based on the identifier you use here .
+* **source** [optional] : if your article is a republication (you had published it somewhere else first), provide the original link
 * **categories** : Post categories. Its preferred that you use 1 to 3 categories.
 * **tags**: Post tags. Use as many as you feel like.
 
 Note the **use** part. These are global variables that we need in our template, to show the whole list of categories and tags.
 It should be provided as-is, with no changes. We will work on a fix so you won't need to do this every time you write a new post.
+
+To see a real example, check the [published articles](https://github.com/dev-human/dev-human/tree/master/source/_posts) folder in our repository.
 
 Now **commit** the changes to save the file in your forked repository. When you open it again, GitHub wil automatically detect the markdown
 extension and provide a pretty neat markdown editor so you can write and preview your article.
@@ -119,4 +99,3 @@ Naturally, you only need to do this step once.
 ### 6. Pull Request
 
 When you are done, open a pull request to **dev-human/dev-human**.
-

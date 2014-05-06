@@ -9,3 +9,11 @@ sculpin_content_types:
             - tags
             - categories
             - authors
+    docs:
+      type: path
+      path: _docs
+      singular_name: docs
+      layout: docs
+      permalink: docs/:filename/
+      taxonomies:
+            - tags
