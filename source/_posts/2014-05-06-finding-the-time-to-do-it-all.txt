@@ -2,6 +2,8 @@
 title: Finding the time to do it all
 author: Matthias Noback
 date: "2014-05-06"
+categories:
+    - Life and Code
 tags:
     - time management
     - family
