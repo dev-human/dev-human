@@ -7,6 +7,7 @@ categories:
 tags:
     - developers
     - power
+    - independent
 use:
     - posts_tags
     - posts_categories
