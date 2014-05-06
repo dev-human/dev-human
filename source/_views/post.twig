@@ -19,6 +19,18 @@
 
         {{ page.blocks.content|raw }}
 
+        <section id="social-icons" class="clearfix">
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style pull-right">
+                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+                <a class="addthis_button_tweet"></a>
+                <a class="addthis_counter addthis_pill_style"></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526833fd774882a3"></script>
+            <!-- AddThis Button END -->
+        </section>
+
         <hr>
 
         <div class="tags">
@@ -66,4 +78,5 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
     </script>
+
 {% endblock %}
