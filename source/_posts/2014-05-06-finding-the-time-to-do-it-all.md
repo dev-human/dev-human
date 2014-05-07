@@ -1,6 +1,7 @@
 ---
 title: Finding the time to do it all
-author: Matthias Noback
+authors:
+    - Matthias Noback
 date: "2014-05-06"
 categories:
     - Life and Code
