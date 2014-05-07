@@ -9,6 +9,9 @@ tags:
     - time management
     - family
     - productivity
+use:
+    - posts_tags
+    - posts_categories
 ---
 
 <blockquote>
