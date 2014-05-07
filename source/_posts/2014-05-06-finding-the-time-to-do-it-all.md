@@ -10,9 +10,10 @@ tags:
     - productivity
 ---
 
-> So much to do, I still got so much to do!
->
-> -- From the Dutch song "Zoveel te doen" (ik heb nog zoveel te doen!) by Toontje Lager
+<blockquote>
+    <p>So much to do, I still got so much to do!</p>
+    <footer>From the Dutch song "Zoveel te doen" (ik heb nog zoveel te doen!) by Toontje Lager</footer>
+</blockquote>
 
 I've been busy my whole life. I'm always looking for something new to try, something to learn, something to make. There's simply no time to stand still. I believe that I have to keep moving.
 
