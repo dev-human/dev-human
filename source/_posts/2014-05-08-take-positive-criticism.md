@@ -7,7 +7,7 @@ categories:
     - Life and Code
 tags:
     - code reviews
-    - staying positve
+    - staying positive
     - criticism
 use:
     - posts_tags
