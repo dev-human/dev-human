@@ -43,7 +43,7 @@ At home: No cash, but clean, happy, well-adjusted children living in a healthy e
 
 #### So who benefits from what job?
 
-The "working" partner receives a paycheck. The the bills get paid. Maybe a holiday or two.. allowances, education for the brats, gasoline money, breakfast cereal, stamps. Savings perhaps. And maybe, if there's anything left, some spending on a hobby
+The "working" partner receives a paycheck. The bills get paid. Maybe a holiday or two.. allowances, education for the brats, gasoline money, breakfast cereal, stamps. Savings perhaps. And maybe, if there's anything left, some spending on a hobby
 (like that full size Boeing cockpit in the garage used for hours of flight simulatoring... or a massive collection of shoes).
 
 > The working partner makes the money, so in a traditional mindset that's "their money".
@@ -65,7 +65,7 @@ That's it. _Everything is the job_.
 
 When we get up, it's a two-person job until I leave for "work". But we're both still working. When I come home, I don't get to put my feet up. Because it's a two-person job until the kids are in bed. *Now* the workday is done. Usually. Unless there's some housework that didn't get done because of unforeseen projectile vomiting...
 
-It so happens, in our household, I possess certain skills that allow me to find a job that pays more money. This is the current situation, but there is no guarantee that that will remain so forever. My parents where forced to swap places due to a medical condition, and they did so without missing a beat (admittedly, there was a period of really lousy food while my dad learned to cook).
+It so happens, in our household, I possess certain skills that allow me to find a job that pays more money. This is the current situation, but there is no guarantee that it will remain so forever. My parents where forced to swap places due to a medical condition, and they did so without missing a beat (admittedly, there was a period of really lousy food while my dad learned to cook).
 
 Keep in mind that I'm only referring to "more money" here. This says nothing about the difficulty of the job; it's just very hard to find someone who will pay for your household to run properly.
 
