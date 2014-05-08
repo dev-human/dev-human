@@ -51,7 +51,7 @@ use:
     - posts_categories
 ---
 
-Your article content goes here. Do wathever you want with markdown.
+Your article content goes here. Do whatever you want with markdown.
 
 ~~~~
 

@@ -25,7 +25,7 @@ In fact, programming is not comparable with any other profession / activity, if 
 writer or an artist, but this is completely different. We create things with **behaviour**. We create things that are **dynamic**. They change, they interact, they grow. Just like us!
 _We create software in our image and likeness_.
 
-And that's not the only reason why we are lucky. Think about how much the entrepreneurship scenario changed in the last decade. Forget about _Sillicon Valley_ and the
+And that's not the only reason why we are lucky. Think about how much the entrepreneurship scenario changed in the last decade. Forget about _Silicon Valley_ and the
 big companies: I'm talking about **independent work** by software developers. Small companies, or even individuals.
 
 When I think about entrepreneurship, I think about creating a new software or online service. I could build something all by myself, only me and my computer.

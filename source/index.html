@@ -32,7 +32,7 @@ use:
 
         <div class="tags">
             <i class="icon-tags"></i> Tags {% for tag in post.meta.tags %}
-            <a class="btn btn-xs btn-primary" href="{{ site.doman }}{{ site.url }}/entries/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
+            <a class="btn btn-xs btn-primary" href="{{ site.url }}/entries/tags/{{ tag|url_encode(true) }}">{{ tag }}</a>
             {% endfor %}
         </div>
 
