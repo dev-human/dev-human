@@ -1019,10 +1019,10 @@ ul.social > li > a:hover {
     padding: 8px 0px;
 }
 
-.blog .blog-item h3 {
+.blog .blog-item h3, .blog .blog-item h2 {
   margin-top: 0;
 }
-.blog .blog-item h3 a {
+.blog .blog-item h3 a, .blog .blog-item h2 a {
     color: #34495e;
 }
 .blog .blog-item .entry-meta {
