@@ -1,9 +1,37 @@
 {% extends "default" %}
 
+{% if page.description is defined %} {% set page_description = page.description %} {% else %} {% set page_description = page.blocks.content|striptags|slice(0,155) %} {% endif %}
+{% if page.image is defined %} {% set page_image = page.image %} {% else %} {% set page_image = 'http://dev-human.com/assets/images/dev-human-logo.png' %} {% endif %}
+
+{% block meta %}
+    <meta name="description" content="{{ page_description }}">
+    <meta name="keywords" content="{% for tag in page.tags %}{{ tag }}{% if not loop.last %}, {% endif %}{% endfor %}" />
+
+    {% if page.authors %}
+        {% set main_author = page.authors[0] %}
+        {% if site.authors[main_author] %}
+            <meta name="author" content="{{ site.authors[main_author]['googleplus']|default(main_author) }}">
+            <link rel="author" href="{{ site.authors[main_author]['googleplus']|default(main_author) }}">
+        {% endif %}
+    {% endif %}
+
+    <!-- Facebook -->
+    <meta property="og:title" content="{{ page.title }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="{{ page_image }}" />
+    <meta property="og:url" content="{{ site.domain_url }}{{ page.url }}" />
+    <meta property="og:description" content="{{ page_description }}" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="{{ page.title }}" />
+    <meta name="twitter:description" content="{{ page_description }}" />
+    <meta name="twitter:image" content="{{ page_image }}" />
+{% endblock %}
+
 {% block content_wrapper %}
 
 <div class="blog-item">
-    <!--<img class="img-responsive img-blog" src="{{ site.url }}/images/blog/blog2.jpg" width="100%" alt="" />-->
     <div class="blog-content">
         <h3>{{ page.title }}</h3>
         <div class="entry-meta">
@@ -18,6 +46,10 @@
         </div>
 
         {{ page.blocks.content|raw }}
+
+        {% if page.source %}
+        <em>This post was originally published here: <a href="{{ page.source }}" target="_blank">{{ page.source }}</a></em>
+        {% endif %}
 
         <section id="social-icons" class="clearfix">
             <!-- AddThis Button BEGIN -->
