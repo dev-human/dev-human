@@ -2,7 +2,7 @@
     {% for authorhandle in author_list %}
         {% if site.authors[authorhandle] %}
             {% set author = site.authors[authorhandle] %}
-            <span><i class="icon-user"></i> <a href="{{ author.url }}" target="_blank">{{ author.name }}</a></span>
+            <span><i class="icon-user"></i> <a href="{{ site.url }}/authors/{{ authorhandle }}" title="Posts from {{ authorhandle }}">{{ author.name }}</a></span>
         {% else %}
             <span><i class="icon-user"></i> {{ authorhandle }}</span>
         {% endif %}

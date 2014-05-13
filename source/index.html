@@ -14,7 +14,7 @@ use:
 <div class="blog-item">
     <!--<img class="img-responsive img-blog" src="{{ site.url }}/images/blog/blog2.jpg" width="100%" alt="" />-->
     <div class="blog-content">
-        <h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
+        <h2><a href="{{ site.domain_url }}{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>
         <div class="entry-meta">
             {% if post.authors %}
                 {% set author_list = post.authors %}
@@ -27,6 +27,23 @@ use:
         </div>
 
         {{ post.blocks.content|raw }}
+
+        <section class="post-share clearfix">
+
+            <div class="pull-right">
+                <div class="fb-like" data-href="{{ site.domain_url }}{{ site.url }}{{ post.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+            </div>
+
+            <div class="pull-right mt3">
+                <div class="g-plusone" data-size="medium" data-href="{{ site.domain_url }}{{ site.url }}{{ post.url }}"></div>
+            </div>
+
+            <div class="pull-right mt3">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.domain_url }}{{ site.url }}{{ post.url }}" data-text="{{ post.title }} &raquo;" data-via="devhumanteam" data-related="devhumanteam">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+
+        </section>
 
         <hr>
 

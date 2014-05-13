@@ -19,6 +19,7 @@
     <link href="{{ site.url }}/assets/css/animate.css" rel="stylesheet">
     <link href="{{ site.url }}/assets/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="{{ site.url }}/assets/highlightjs/styles/github.css">
+    <link href="{{ site.url }}/assets/css/custom.css" rel="stylesheet">
     <link rel="alternate" type="application/atom+xml" href="{{ site.url }}/atom.xml" title="{{ site.title }} activity feed" />
     <style>
         /** quick fix because bootstrap <pre> has a background-color. */
@@ -35,16 +36,15 @@
     <link rel="apple-touch-icon-precomposed" href="{{ site.url }}/assets/images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 <body>
-    <div id="fb-root"></div>
-    <script>
-        (function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=144716315690681";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
+<div id="fb-root"></div>
+
+<script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&appId=481545985227388&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
     {% include "main_nav.twig" %}
 
@@ -72,6 +72,14 @@
 
     {% block scripts %}
     {% endblock %}
+
+    <script type="text/javascript">
+        (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/platform.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+        })();
+    </script>
 
     {% if site.google_analytics_tracking_id %}
         <script type="text/javascript">
