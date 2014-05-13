@@ -26,6 +26,9 @@ to other people's loops, but we can exchange data in many ways.
 
 #### The Eternal Loop?
 
+![eternal loop](/media/posts/PBF111-Reset.jpg)
+<br><em><small>image credits: [pbfcomics](http://pbfcomics.com/111/)</small></em>
+
 The [eternal return](http://en.wikipedia.org/wiki/Eternal_return), or eternal recurrence, is in fact a very old concept that was revisited by Nietzsche
 in many of his works. It suggests that, although time is infinite, all the rest is finite, so there are a limited number of events and "configurations" that can
 take place. One day, eventually, everything will get repeated.
