@@ -1,5 +1,6 @@
 ---
-title: The eternal loop
+title: The Eternal Loop
+description: The eternal loop is a revision of the eternal return concept. Imagine our life is a loop, with some nested loops inside it. We have control over our nested loops, but we don't know what's coming next, in the bigger scope.
 authors:
     - erikaheidi
 categories:
@@ -56,3 +57,8 @@ misses one **_axys_**. If you consider the _eternal return_ as a **spiral**, thi
 
 If you notice that something, some situation, is constantly getting repeated in your life, it's already a good sign - it's like realizing you are walking in circles (the earlier you notice, the better).
 Try to remember what you did before, what didn't work, and what you can do differently this time.
+
+#### How I got inside
+
+Since the second time I got locked out, knowing that it would probably happen again, I left a "secret mechanism" to open the door from the outside. I have to slip my hand through the letter box opening,
+it's very tight and it hurts my wrists really bad, makes me look like either an idiot or a thief (or both), but it works.
