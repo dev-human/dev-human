@@ -50,7 +50,7 @@ was the first time I was with my dog. Doesn't it look like a game, where you hav
 These small variations represent the antagonism you need to face in order to evolve. So you can go to the next level, with new challenges - which doesn't mean the _old challenges_
 won't ever appear again. But now you are more experienced, so theoretically you will do better. The loop never ends.
 
-As with many other philosophical ideas, the _eternal return_ has a strong metaphor for life. Because, basically, _repetition_ - or practice - is the most effective way of learning.
+As with many other philosophical ideas, the _eternal return_ is a strong metaphor for life. Because, basically, _repetition_ - or practice - is the most effective way of learning.
  It builds self-confidence and self-awareness.
 
 Don't see it as a circle, where you will necessarily reach the starting point again. This is _almost_ true, it only
@@ -63,5 +63,5 @@ Try to remember what you did before, what didn't work, and what you can do diffe
 
 #### How I got inside
 
-Since the second time I got locked out, knowing that it would probably happen again, I left a "secret mechanism" to open the door from the outside. I have to slip my hand through the letter box opening,
+After the second time I got locked out, knowing that it would probably happen again, I left a "secret mechanism" to open the door from the outside. I have to slip my hand through the letter box opening,
 it's very tight and it hurts my wrists really bad, makes me look like either an idiot or a thief (or both), but it works.
