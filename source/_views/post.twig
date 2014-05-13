@@ -51,16 +51,21 @@
         <em>This post was originally published here: <a href="{{ page.source }}" target="_blank">{{ page.source }}</a></em>
         {% endif %}
 
-        <section id="social-icons" class="clearfix">
-            <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style pull-right">
-                <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
-                <a class="addthis_button_tweet"></a>
-                <a class="addthis_counter addthis_pill_style"></a>
+        <section class="post-share clearfix">
+
+            <div class="pull-right">
+                <div class="fb-like" data-href="{{ site.domain_url }}{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
             </div>
-            <script type="text/javascript">var addthis_config = {"data_track_addressbar":false};</script>
-            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-526833fd774882a3"></script>
-            <!-- AddThis Button END -->
+
+            <div class="pull-right mt3">
+                <div class="g-plusone" data-size="medium" data-href="{{ site.domain_url }}{{ site.url }}{{ page.url }}"></div>
+            </div>
+
+            <div class="pull-right mt3">
+                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.domain_url }}{{ site.url }}{{ page.url }}" data-text="{{ page.title }} &raquo;" data-via="devhumanteam" data-related="devhumanteam">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+            </div>
+
         </section>
 
         <hr>

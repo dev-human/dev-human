@@ -11,13 +11,25 @@ use:
 
 {% block content %}
 
-    <h1>Posts by {{ page.author }}</h1>
+{% set authorhandle = page.author %}
 
-    {% for post in page.author_posts %}
-        <article>
-            <h3><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h3>
-        </article>
-        <hr>
-    {% endfor %}
+<div class="blog-item">
+    <div class="blog-content">
+        {% if site.authors[authorhandle] %}
+            {% set author = site.authors[authorhandle] %}
+            {% include 'author_box.twig' %}
+        {% endif %}
+
+        <h2>Posts by {{ page.author }}</h2>
+
+        <ul>
+        {% for post in page.author_posts %}
+            <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a><br>
+                <em>{{ post.date|date('M d, Y') }}</em>
+            </li>
+        {% endfor %}
+        </ul>
+    </div>
+</div>
 
 {% endblock content %}
