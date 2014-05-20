@@ -29,7 +29,7 @@ From _my_ perspective, being in an international conference **as a speaker**, an
 
 Naturally, for other experienced speaker's perspectives, that was just _normal_.
 
-Two weeks before PhpDay, it crossed my mind that there was a **very small chance** Rasmus would watch my talk; this thought got me terrified. I cleared my had of it, because _certainly that would not happen_. When it **did** happen, I didn't have much time to overthink the situation, and everything felt just... _normal_. After that, I had a **change of perspective**. It's not because I don't have fear anymore, it's because I know I am able to overcome it.
+Two weeks before PhpDay, it crossed my mind that there was a **very small chance** Rasmus would watch my talk; this thought got me terrified. I cleared my had of it, because _certainly that would not happen_. When it **did** happen, I didn't have much time to overthink the situation, and everything felt just... _normal_. After that, I had a **change of perspective**. It's not because I don't have fear anymore, or because I won't get nervous. It's because I know I am able to overcome it.
 
 I'm only telling all this story because, ten years ago, I would love to read it, as a young developer with big dreams. There are no limits for what you can accomplish, it will only depend on you.
 
