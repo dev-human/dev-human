@@ -4,7 +4,9 @@ title: Category Archive
 generator: [posts_category_index, pagination]
 pagination:
     provider: page.category_posts
-
+use:  
+    - posts_categories
+    - posts_tags
 ---
 {% block title %}{{ page.title }} "{{ page.category }}"{% endblock %}
 {% block content %}
