@@ -19,8 +19,8 @@ jQuery(function($) {
 
 	//portfolio
 	$(window).load(function(){
-		$portfolio_selectors = $('.portfolio-filter >li>a');
-		if($portfolio_selectors!='undefined'){
+		$portfolio_selectors = $('.portfolio-filter>li>a');
+		if($portfolio_selectors.length){
 			$portfolio = $('.portfolio-items');
 			$portfolio.isotope({
 				itemSelector : 'li',
