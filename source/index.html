@@ -23,7 +23,7 @@ use:
             <span><i class="icon-folder-close"></i> {% for category in post.meta.categories %}
             <a href="{{ site.url }}/entries/categories/{{ category|url_encode(true) }}">{{ category }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}</span>
-            <span><i class="icon-calendar"></i> {{ page.date|date(site.default_date_format) }}</span>
+            <span><i class="icon-calendar"></i> {{ post.date|date(site.default_date_format) }}</span>
         </div>
 
         {{ post.blocks.content|raw }}
