@@ -19,8 +19,8 @@ jQuery(function($) {
 
 	//portfolio
 	$(window).load(function(){
-		$portfolio_selectors = $('.portfolio-filter >li>a');
-		if($portfolio_selectors!='undefined'){
+		$portfolio_selectors = $('.portfolio-filter>li>a');
+		if($portfolio_selectors.length){
 			$portfolio = $('.portfolio-items');
 			$portfolio.isotope({
 				itemSelector : 'li',
@@ -37,13 +37,13 @@ jQuery(function($) {
 	});
 
 	//contact form
-	var form = $('.contact-form');
+	var form = $('#searchbar_form');
 	form.submit(function () {
 		$this = $(this);
-		$.post($(this).attr('action'), function(data) {
-			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
-		},'json');
-		return false;
+		var search = $this.find('[name=q]').val().trim();
+		if(0 == search.length) {
+			return false;
+		}
 	});
 
 	//goto top
