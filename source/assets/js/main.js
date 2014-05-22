@@ -37,13 +37,13 @@ jQuery(function($) {
 	});
 
 	//contact form
-	var form = $('.contact-form');
+	var form = $('#searchbar_form');
 	form.submit(function () {
 		$this = $(this);
-		$.post($(this).attr('action'), function(data) {
-			$this.prev().text(data.message).fadeIn().delay(3000).fadeOut();
-		},'json');
-		return false;
+		var search = $this.find('[name=q]').val().trim();
+		if(0 == search.length) {
+			return false;
+		}
 	});
 
 	//goto top

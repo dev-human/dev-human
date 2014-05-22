@@ -1,10 +1,11 @@
 <div class="widget search">
-    <form role="form">
+    <form id="searchbar_form" role="form" action="https://www.google.com/search" target="_blank">
         <div class="input-group">
-            <input type="text" class="form-control" autocomplete="off" placeholder="Search">
-                        <span class="input-group-btn">
-                            <button class="btn btn-danger" type="button"><i class="icon-search"></i></button>
-                        </span>
+            <input type="hidden" name="sitesearch" value="{{ site.domain_url }}">
+            <input type="text" class="form-control" autocomplete="off" placeholder="Search" name="q">
+                <span class="input-group-btn">
+                    <button class="btn btn-danger" type="submit"><i class="icon-search"></i></button>
+                </span>
         </div>
     </form>
 </div><!--/.search-->
