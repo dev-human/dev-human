@@ -23,6 +23,13 @@ permalink: atom.xml
             <updated>{{ post.date|date('c') }}</updated>
             <id>{{ site.url }}{{ post.url }}</id>
             <content type="html"><![CDATA[{{ post.blocks.content|raw }}]]></content>
+            {% for authorhandle in post.authors %}
+                <author>
+                    {% set author = site.authors[authorhandle] %}
+                    <name>{{ author.name }}</name>
+                    <uri>{{ author.url }}/</uri>
+                </author>
+            {% endfor %}
         </entry>
     {% endfor %}
 </feed>
