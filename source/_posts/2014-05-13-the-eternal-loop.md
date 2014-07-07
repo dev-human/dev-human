@@ -26,7 +26,7 @@ to other people's loops, but we can exchange data in many ways.
 
 #### The Eternal Loop?
 
-![eternal loop](/media/posts/PBF111-Reset.jpg)
+<img src="/media/posts/PBF111-Reset.jpg" class="img img-responsive">
 <br><em><small>image credits: [pbfcomics](http://pbfcomics.com/111/)</small></em>
 
 The [eternal return](http://en.wikipedia.org/wiki/Eternal_return), or eternal recurrence, is in fact a very old concept that was revisited by Nietzsche
