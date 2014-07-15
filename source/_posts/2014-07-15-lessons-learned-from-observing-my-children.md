@@ -63,7 +63,7 @@ to help them get better at something.
 ### 3. Make education of others your own priority
 
 Before I had children, I had the notion that you "live at home" and "learn in school". I'm not sure why, but it never
-occurred to me that a great deal of who I am came from what I learned at home, or with my friend, or just from
+occurred to me that a great deal of who I am came from what I learned at home, or with my friends, or just from
 participating in the world. Education is what happens when you sit down in that seat in the classroom, right?
 
 With our kids, we make it a point teach the stuff all the time. We play word games at dinner, read bedtime stories,
@@ -76,9 +76,9 @@ and capitals. So schools are certainly a place for learning. But the bottom line
 _your responsibility_.
 
 **My lesson is:**<br>
-Other people's education can fall within your circle of influence. If you're a company owner like me and you have
-people committed to spending their time in your office; make it _your_ priority to provide ways for them to learn more,
-improve their skill, become better dev-humans.
+Other people's education can fall within your circle of influence. For example if you're a company owner like me and
+you have people committed to spending their time in your office; make it _your_ priority to provide ways for them to
+learn more, improve their skill and become better dev-humans in general.
 
 ### In the end
 
