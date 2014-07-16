@@ -35,7 +35,7 @@ different perspective, and he grew cautious of that solid surface above his head
 background, they followed a completely separate path in learning about the table's ability to inflict pain.
 
 **My lesson is:**<br>
-Everyone you wil ever meet has followed a different path of learning. Respect that difference, as someone who might
+Everyone you will ever meet has followed a different path of learning. Respect that difference, as someone who might
 seem less experienced than you might know a little something about a table right above your head!
 
 ### 2. Always point out wrongs as a matter-of-fact
