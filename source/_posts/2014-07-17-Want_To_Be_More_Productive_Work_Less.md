@@ -2,7 +2,7 @@
 title: Want To Be More Productive? Work Less!
 authors:
     - skoop
-date: "2014-07-16"
+date: "2014-07-17"
 categories:
     - Productivity
 tags:
