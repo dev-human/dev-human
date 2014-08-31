@@ -19,6 +19,16 @@ I'm sure there will be plenty of blog posts on the actual events and practical l
 different approach with this post. I experienced quite a few emotions on a very broad range of the spectrum, and I'd
 like to share those with you.
 
+**First, for those who have not heard about WeCamp, this is taken from their [website](http://weca.mp):**
+
+_"WeCamp is a new event focusing on not just hearing about cool technology, but also applying it. During the 5 days
+of the event, you'll get to work on a project together with 4 random other people, under the guidance of an experienced
+coach. Together with your team mates, you'll work on improving both your technical skills while developing on the
+project as well as your soft-skills in managing the project and communicating with your team members."_
+
+That sums up the activity quite nicely, but it doesn't say anything about how you might feel at such an event. Here's
+what happened to me:
+
 ### Anticipation and Excitement
 
 At first, there was **Anticipation**. Now, I'm usually excited before going to a tech event, but this was on a whole
@@ -43,7 +53,7 @@ that and you're bound to have loads of fun.
 ### Doubt
 
 In our team, we had picked a project together but on a topic that only one of us had any knowledge of. This immediately
-created a problem, because we needed a lot of outside information to understand the actual problem we where
+created a problem, because we needed a lot of outside information to understand the actual problem we were
 solving.
 
 Adding to that, most other teams had someone on board who knew much much more about our particular domain.
@@ -56,7 +66,7 @@ ability to assess a problem and judge what needed to be done to solve it.
 Because of the topic of our teams project, a couple of people offered to help out during the week. I turned down the
 offers because it felt odd having other team members working on our project. In retrospect, I can certainly add that
 my **ego** got in the way. Not being able to admit that I needed the help got in the way of my team's total progress,
-a lesson I won't forget lightly.
+a lesson I won't easily forget.
 
 In addition, there was also some **fear** of showing the code I actually had written. One team was really ahead of the
 game, seemingly having time left to help others. This was a bit intimidating (they must be so much better than I am),
@@ -90,9 +100,9 @@ keep up after WeCamp.
 Once we got through connecting everything together, there was a pretty reasonable end result. Sure, it didn't do what
 it was supposed to, but we proved that we could get the job done. Even if it was only to ourselves.. \*grin\*
 We managed to give a proper demo and a reasonable presentation, which is insane if you consider that we didn't even
-know what we where building only 4 days before...
+know what we where building only 4 days before…
 
-I also had my eye on a few people that I knew before going to WeCamp and I felt they all accomplished way
+I also had my eye on a few people that I knew before going to WeCamp and I think they all accomplished way
 more than they expected. I could literally feel the growth around me :-) The end presentations all showed projects in
 a state way beyond what a 3-day coding session would bring in any normal circumstance. At least that is my opinion.
 
@@ -111,12 +121,12 @@ in a positive and negative sense and even that was a lesson. Building a team wit
 building anything else.
 
 I think there was a general group feeling towards the organisation, that rhymes with _"honey"_ and starts
-with _"shut up and take my..."_. What's the last tech event you went to where 100% of participants want to return
+with _"shut up and take my…"_. What's the last tech event you went to where 100% of participants wanted to return
 beyond a shadow of a doubt?
 
 And with that, I'm off to enjoy my last day of reflection before work pulls me back into the _real world_ tomorrow.
-A huge thanks to the organisation of WeCamp, the coaches, the sponsors and anybody else who made this event possible.
+A huge thanks to the organisation of [WeCamp](http://weca.mp), the coaches, the sponsors and anybody else who made this event possible.
 
 See you all next year!
 
-_PS: I'd like this to be an open invitation to my fellow WeCamp14'ers, to provide feedback if you have any._
+_PS: I'd like this to be an open invitation to my fellow WeCamp14'ers: please provide feedback, if you have any._
