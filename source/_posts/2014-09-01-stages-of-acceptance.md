@@ -15,7 +15,7 @@ use:
 
 Diversity: a hard and very delicate subject on IT these days. Every now and then, we see horrible things exposed on Twitter - harassments, hate, humiliation towards women or other minorities. And this is only the tip of the iceberg, since not everybody has the guts to expose such threats. Yet, many people seem to not _believe_ this is actually happening. Or, at least, consider that this is not _their_ problem.
 
-That's my impression after seeing some of the feedbacks received by a dear friend, in response to a very truthful talk where she exposed such problems and how toxic this environment can be, specially for women, but for minorities in general. Anywhere from _"this only happens in the US"_ to _"a little bit too fake"_, some people clearly don't want to see what is happening out there, in the real world. And I want to understand **why**.
+That's my impression after seeing some of the feedbacks received by a dear friend, in response to a very truthful talk where she exposed such problems and how toxic this environment can be, not only for for women, but for minorities in general. Anywhere from _"this only happens in the US"_ to _"a little bit too fake"_, some people clearly don't want to see what is happening out there, in the real world. And I want to understand **why**.
 
 This is not a post about diversity and gender issues, and I'm not here to try to prove the problems are there; this is a post about **why** some people still struggle to **believe** when there's _something wrong_ that needs immediate attention.
 
