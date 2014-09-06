@@ -4,7 +4,7 @@ authors:
     - igorw
 date: "2014-09-06"
 categories:
-    - Life and Code
+    - Culture
     - Open Source
 tags:
     - community
