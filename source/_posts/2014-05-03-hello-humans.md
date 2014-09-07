@@ -28,4 +28,4 @@ Please have a look at our [about page](/about) to better understand what is **de
 
 I hope some of you will join me, contributing with your ideas - this is not the kind of project that can be built with one mind only.
 Do you have an interesting idea to share? A story? A theory? A hobby? Something funny? Something that sounded too off-topic for your
-technical blog? Then please, [contribute](/contribute).
+technical blog? Then please, [contribute](/docs/contribute).
