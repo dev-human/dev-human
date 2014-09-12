@@ -51,22 +51,8 @@
         <em>This post was originally published here: <a href="{{ page.source }}" target="_blank">{{ page.source }}</a></em>
         {% endif %}
 
-        <section class="post-share clearfix">
-
-            <div class="pull-right">
-                <div class="fb-like" data-href="{{ site.domain_url }}{{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-            </div>
-
-            <div class="pull-right mt3">
-                <div class="g-plusone" data-size="medium" data-href="{{ site.domain_url }}{{ site.url }}{{ page.url }}"></div>
-            </div>
-
-            <div class="pull-right mt3">
-                <a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.domain_url }}{{ site.url }}{{ page.url }}" data-text="{{ page.title }} &raquo;" data-via="devhumanproject" data-related="devhumanproject">Tweet</a>
-                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            </div>
-
-        </section>
+        {% set post = page %}
+        {% include 'post_share.twig' %}
 
         <hr>
 
