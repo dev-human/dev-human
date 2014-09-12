@@ -1,6 +1,6 @@
 # dev-human
 
-**dev-human** is a collaborative blog created by developers, for developers, focused on non-technical, lightning content.
+**dev-human** is a collaborative blog created by developers, for developers, focused on non-technical, lightening content.
 Visit the website to get more info: http://dev-human.com .
 
 Powered by [Sculpin](http://sculpin.io).
