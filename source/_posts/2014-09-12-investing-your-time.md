@@ -1,5 +1,5 @@
 ---
-title: Investing your time on things that matter
+title: Investing your Time
 description: Time is a very precious resource - very ephemeral and limited, and yet sometimes we struggle to direct it into something useful.
 authors:
     - erikaheidi
@@ -41,9 +41,9 @@ My head is full of ideas, but I am not able to turn all of them into concrete _t
 runs in your mind trying to figure out what would be the _best_ thing to do right now, you just end up doing nothing, cause... **choosing is hard**.
 
 So, I believe procrastination also comes from uncertainty and lack of purpose. If you don't have clear ideas, clear objectives, you won't go far.
-I know this from a fact; being working with independent projects for a while, I realize that I could have accomplished way more, in financial terms, if I had more **focus**.
+I know this from a fact; having worked with independent projects for a while, I realize that I could have accomplished way more, in financial terms, if I had more **focus**.
 
-The thing is that today, with the enormous amount of data we have access to, focus is even more precious than time. Is a luxury item, more precisely.
+The thing is that today, with the enormous amount of data we have access to, focus is even more precious than time. It's a luxury item, more precisely.
 Because focus requires conscious choices.
 
 ### Defining Goals
