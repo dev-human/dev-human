@@ -24,6 +24,7 @@ authors:
       url: http://erikaheidi.com
       avatar: https://pbs.twimg.com/profile_images/504893198859132929/h7_5dtcA.jpeg
       twitter: http://twitter.com/erikaheidi
+      twitter_handle: erikaheidi
       googleplus: https://plus.google.com/102734777555057691872
       bio: independent web developer && open source enthusiast. sometimes writer, sometimes speaker. loves cats, elephpants and unicorns.
   cordoval:
@@ -31,52 +32,61 @@ authors:
       url: http://pilotci.com
       avatar: https://pbs.twimg.com/profile_images/498814941738975233/uLlDK3Gl.png
       twitter: http://twitter.com/cordoval
+      twitter_handle: cordoval
       bio: Gush lead developer, Bldr.io team member, author, translator, sometimes speaker too, like simplicity and clean code
   matthiasnoback:
       name: Matthias Noback
       url: http://php-and-symfony.matthiasnoback.nl
       avatar: https://pbs.twimg.com/profile_images/1591397394/matthias-noback.jpg
       twitter: http://twitter.com/matthiasnoback
+      twitter_handle: matthiasnoback
       bio: PHP developer, writer, speaker, father.
   ramondelafuente:
       name: Ramon de la Fuente
       url: http://future500.nl
       avatar: http://www.gravatar.com/avatar/24ef80339ca19df482961c1571cda607.png
       twitter: http://twitter.com/f_u_e_n_t_e
+      twitter_handle: f_u_e_n_t_e
       bio: Company owner, Developer, User group organizer and family man (not necessarily in that order)
   meadsteve:
       name: Steve Brazier
       url: http://meadsteve.github.io/
       avatar: https://pbs.twimg.com/profile_images/458936525338587140/bjZT3Y8R_400x400.png
       twitter: http://twitter.com/meadsteve
+      twitter_handle: meadsteve
       bio: Standard Human. Reasonable Developer. Poorly co-ordinated.
   geeh:
       name: Gary Hockin
       url: http://blog.hock.in/
       avatar: https://www.gravatar.com/avatar/e61ae7dfad370ba47a72f79418160f51?s=180&d=mm&r=g
       twitter: http://twitter.com/geeh
+      twitter_handle: geeh
       bio: Roave man, conference speaker, pretend developer. Pool player.
   skoop:
       name: Stefan Koopmanschap
       url: http://leftontheweb.com/
       avatar: https://en.gravatar.com/userimage/777615/ac1e9eef7df735bd3321c482040fb432.jpg
       twitter: http://twitter.com/skoop
+      twitter_handle: skoop
       bio: Family man, PHP freak, conference speaker, co-founder of Ingewikkeld, usergroup-maniac, music addict
   jaytaph:
       name: Joshua Thijssen
       url: http://adayinthelifeof.nl
       avatar: https://pbs.twimg.com/profile_images/479971868036722689/rEm5DPIa_400x400.jpeg
       twitter: http://twitter.com/jaytaph
+      twitter_handle: jaytaph
       bio: Does things with computers. Mostly voiding the warranty.
   mauriciojr:
       name: Maurício Linhares
       url: http://mauricio.github.io/
       avatar: http://www.gravatar.com/avatar/1426a9fd5267e73d9e30ebaac1bde144.png
       twitter: http://twitter.com/mauriciojr
+      twitter_handle: mauriciojr
       bio: Programmer, Jiu-Jitsu noob and heavy metal maniac.
   igorw:
       name: Igor Wiedler
       url: https://igor.io
       avatar: http://gravatar.com/avatar/eb42ff31986f5ed1d97580819134d702?s=300
       twitter: https://twitter.com/igorwhiletrue
+      twitter_handle: igorwhiletrue
       bio: A little bit too fake
