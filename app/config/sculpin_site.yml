@@ -26,6 +26,7 @@ authors:
       twitter: http://twitter.com/erikaheidi
       twitter_handle: erikaheidi
       googleplus: https://plus.google.com/102734777555057691872
+      github: https://github.com/erikaheidi
       bio: independent web developer && open source enthusiast. sometimes writer, sometimes speaker. loves cats, elephpants and unicorns.
   cordoval:
       name: Luis Cordova
@@ -33,6 +34,7 @@ authors:
       avatar: https://pbs.twimg.com/profile_images/498814941738975233/uLlDK3Gl.png
       twitter: http://twitter.com/cordoval
       twitter_handle: cordoval
+      github: https://github.com/cordoval
       bio: Gush lead developer, Bldr.io team member, author, translator, sometimes speaker too, like simplicity and clean code
   matthiasnoback:
       name: Matthias Noback
@@ -40,6 +42,7 @@ authors:
       avatar: https://pbs.twimg.com/profile_images/1591397394/matthias-noback.jpg
       twitter: http://twitter.com/matthiasnoback
       twitter_handle: matthiasnoback
+      github: https://github.com/matthiasnoback
       bio: PHP developer, writer, speaker, father.
   ramondelafuente:
       name: Ramon de la Fuente
@@ -47,6 +50,7 @@ authors:
       avatar: http://www.gravatar.com/avatar/24ef80339ca19df482961c1571cda607.png
       twitter: http://twitter.com/f_u_e_n_t_e
       twitter_handle: f_u_e_n_t_e
+      github: https://github.com/ramondelafuente
       bio: Company owner, Developer, User group organizer and family man (not necessarily in that order)
   meadsteve:
       name: Steve Brazier
@@ -54,6 +58,7 @@ authors:
       avatar: https://pbs.twimg.com/profile_images/458936525338587140/bjZT3Y8R_400x400.png
       twitter: http://twitter.com/meadsteve
       twitter_handle: meadsteve
+      github: https://github.com/meadsteve
       bio: Standard Human. Reasonable Developer. Poorly co-ordinated.
   geeh:
       name: Gary Hockin
@@ -61,6 +66,7 @@ authors:
       avatar: https://www.gravatar.com/avatar/e61ae7dfad370ba47a72f79418160f51?s=180&d=mm&r=g
       twitter: http://twitter.com/geeh
       twitter_handle: geeh
+      github: https://github.com/GeeH
       bio: Roave man, conference speaker, pretend developer. Pool player.
   skoop:
       name: Stefan Koopmanschap
@@ -68,6 +74,7 @@ authors:
       avatar: https://en.gravatar.com/userimage/777615/ac1e9eef7df735bd3321c482040fb432.jpg
       twitter: http://twitter.com/skoop
       twitter_handle: skoop
+      github: https://github.com/skoop
       bio: Family man, PHP freak, conference speaker, co-founder of Ingewikkeld, usergroup-maniac, music addict
   jaytaph:
       name: Joshua Thijssen
@@ -75,6 +82,7 @@ authors:
       avatar: https://pbs.twimg.com/profile_images/479971868036722689/rEm5DPIa_400x400.jpeg
       twitter: http://twitter.com/jaytaph
       twitter_handle: jaytaph
+      github: https://github.com/jaytaph
       bio: Does things with computers. Mostly voiding the warranty.
   mauriciojr:
       name: Maurício Linhares
@@ -82,6 +90,7 @@ authors:
       avatar: http://www.gravatar.com/avatar/1426a9fd5267e73d9e30ebaac1bde144.png
       twitter: http://twitter.com/mauriciojr
       twitter_handle: mauriciojr
+      github: https://github.com/mauricio
       bio: Programmer, Jiu-Jitsu noob and heavy metal maniac.
   igorw:
       name: Igor Wiedler
@@ -89,4 +98,5 @@ authors:
       avatar: http://gravatar.com/avatar/eb42ff31986f5ed1d97580819134d702?s=300
       twitter: https://twitter.com/igorwhiletrue
       twitter_handle: igorwhiletrue
+      github: https://github.com/igorw
       bio: A little bit too fake
