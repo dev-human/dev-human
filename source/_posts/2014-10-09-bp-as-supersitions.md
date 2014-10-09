@@ -28,7 +28,7 @@ Better safe than sorry (for a better more well founded explanation see here: [Ne
 Recently I've been wondering if it may in fact be healthy to treat development best practises as superstitions.
 If you've just been told they are the best way to do something and not why isn't this a lot like a magic spell?
 Do this thing and your code will be better. Offer a sacrifice to the code gnomes.
-This doesn't mean they don't work a lot or most of the time. It doesn't mean they are always harmful.
+This doesn't mean they don't work most of the time. It doesn't mean they are always harmful.
 Though some may in fact be. And relying on many of them blindly almost certainly is.
 
 A good example came up in a [talk on refactoring](https://joind.in/11802) I attended at the weekend.
