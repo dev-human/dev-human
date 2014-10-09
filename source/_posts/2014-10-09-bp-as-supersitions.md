@@ -32,7 +32,7 @@ This doesn't mean they don't work a lot or most of the time. It doesn't mean the
 Though some may in fact be. And relying on many of them blindly almost certainly is.
 
 A good example came up in a [talk on refactoring](https://joind.in/11802) I attended at the weekend.
-The speaker was discussing various refactoring techniques and in one example he created a new class. Moved some code out of a giant ball of code in to the class.
+The speaker was discussing various refactoring techniques and in one example he created a new class. Moved some code out of a giant ball of code into the class.
 Then he used a ```global```. At this point I readied my pitch fork. Globals, as we all know, are a bad thing and he should be punished.
 Luckily I managed to resist. He then went on to make a very good point: this refactoring step was simple and discrete and it *had* made the code *better*.
 The next step he listed then removed this global and used dependency injection. But even if this second step didn't get performed the code was still in a better
