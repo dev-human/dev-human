@@ -25,3 +25,13 @@
 .mt3 {
     margin-top: 3px;
 }
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px 5px;
+    }
+
+    .blog .blog-item .blog-content {
+        padding: 10px;
+    }
+}
