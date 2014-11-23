@@ -1,4 +1,5 @@
 # dev-human
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/dev-human/dev-human?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 **dev-human** is a collaborative blog created by developers, for developers, focused on non-technical, lightening content.
 Visit the website to get more info: http://dev-human.com .
