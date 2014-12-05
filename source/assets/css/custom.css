@@ -35,8 +35,13 @@
         padding: 10px;
     }
     
-    /* Added left margin to the logo when in mobile/tablet mode */
+    /* Adds left margin to the logo when in mobile/tablet mode */
     .navbar-brand {
         margin-left: 10px;
+    }
+
+    /* Adds space between the navbar and the first blog entry when in mobile/tablet mode */
+    #blog {
+   	margin-top: 10px; 
     }
 }
