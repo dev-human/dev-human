@@ -34,4 +34,9 @@
     .blog .blog-item .blog-content {
         padding: 10px;
     }
+    
+    /* Added 05/12/14 - needs to be tested*/
+    .navbar-brand {
+        margin-left: 10px;
+    }
 }
