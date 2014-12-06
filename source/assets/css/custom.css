@@ -34,4 +34,14 @@
     .blog .blog-item .blog-content {
         padding: 10px;
     }
+    
+    /* Adds left margin to the logo when in mobile/tablet mode */
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    /* Adds space between the navbar and the first blog entry when in mobile/tablet mode */
+    #blog {
+   	margin-top: 10px; 
+    }
 }
