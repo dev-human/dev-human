@@ -4,7 +4,8 @@ authors:
 - gabidavila
 date: "2015-01-21"
 categories:
-  - Article
+  - Life and Code
+  - Open Source
 tags:
   - programming
   - community
