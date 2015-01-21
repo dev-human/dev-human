@@ -30,8 +30,10 @@ And that kind of criticism isn't helpful at all. I've learned that if you don't 
 
 They probably have done awesome code to their companies, but they can't share because is private, and that is ok, because not everyone is obligated to have a **Github** account or participate in the community. (I won't enter in the discussion that a Github account should be a person CV).
 
-But because of the **_code-trolls_** people are afraid to do participate, and becoming a target of people tirades. I have been witness to that, and I can state you need to have thick skin to deal with the fire-squad. I am not saying that sensible people can't participate. I think we are handling people in the wrong way. People make mistakes and making a big deal of if it only makes the person never want to do Open Source again.
+But because of the **_code-trolls_** people are afraid to do participate, and becoming a target of people tirades. I have been witness to that, and I can state you need to have thick skin to deal with the fire squad. I am not saying that sensible people can't participate. I think we are handling people in the wrong way. People make mistakes and making a big deal of if it only makes the person never want to do Open Source again.
 
 Some may say that Open Source is a great school, which you can learn a lot. I believe that, but only if people are open to accept others into their groups, because I saw some projects around, and they are like [The Clubhouse fellers](http://en.wikipedia.org/wiki/Little_Lulu), not because of sexism, but because only participate in the Open Source project people that are their friends, or famous in a some way. So in other words, the project is open, the community isn't.
 
 To summarize: being a **_code-troll_** drive people away and to make an Open Source project "V.I.P." doesn't help the community, only helps people's ego. And to me, this is a cause worth fighting for: **Let's be the host, not the bouncer**, because it takes a lot of courage to make yourself open like that.
+
+I encourage you to read the [Contributor Covenant](http://contributor-covenant.org/), it is code of conduct for open source projects, but reading isn't enough, we must remind each other to follow it.
