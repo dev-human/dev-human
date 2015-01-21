@@ -34,4 +34,4 @@ But because of the **_code-trolls_** people are afraid to do participate, and be
 
 Some may say that Open Source is a great school, which you can learn a lot. I believe that, but only if people are open to accept others into their groups, because I saw some projects around, and they are like [The Clubhouse fellers](http://en.wikipedia.org/wiki/Little_Lulu), not because of sexism, but because only participate in the Open Source project people that are their friends, or famous in a some way. So in other words, the project is open, the community isn't.
 
-To summarize: being a **_code-troll_** drive people away and make an Open Source project "V.I.P." doesn't help the community, only helps people's ego. And to me, this is a cause worth fighting for: **Let's be the host, not the bouncer**, because it takes a lot of courage to make yourself open like that.
+To summarize: being a **_code-troll_** drive people away and to make an Open Source project "V.I.P." doesn't help the community, only helps people's ego. And to me, this is a cause worth fighting for: **Let's be the host, not the bouncer**, because it takes a lot of courage to make yourself open like that.
