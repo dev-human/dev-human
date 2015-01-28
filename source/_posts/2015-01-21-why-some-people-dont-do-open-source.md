@@ -27,7 +27,7 @@ But imagine the following, you have an idea, that you think it's awesome, and yo
 
 And all of the sudden there are 23 PR's of people helping you to improve your code, adding more features, which is awesome! However, theres always those 5% of people who are only there to criticize what you did and diminish your job.
 
-And that kind of criticism isn't helpful at all. I've learned that if you don't have something useful to add, just keep your mouth shut. Because 5% of those horrible people out there, the **_code-trolls_** as I use to call them, push away a lot of amazing coders that could be contributing to open source, but choose no to, fearing those reactions.They just to go to work, do a side project here and there and go on with their lives. They may even follow you on Twitter.
+And that kind of criticism isn't helpful at all. I've learned that if you don't have something useful to add, just keep your mouth shut. Because 5% of those horrible people out there, the **_code-trolls_** as I use to call them, push away a lot of amazing coders that could be contributing to open source, but choose no to, fearing those reactions.They just go to work, do a side project here and there and go on with their lives. They may even follow you on Twitter.
 
 They probably have done awesome code to their companies, but they can't share because is private, and that is ok, because not everyone is obligated to have a **Github** account or participate in the community. (I won't enter in the discussion that a Github account should be a person CV).
 
