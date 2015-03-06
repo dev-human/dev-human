@@ -15,7 +15,7 @@ use:
 - posts_categories
 ---
 
-This post has much to do with the one made by [Erika Heidi](http://www.twitter.com/ericaheidi):  **[The Art of Programming](http://dev-human.com/entries/2014/12/19/the-art-of-programming/)**.
+This post has much to do with the one made by [Erika Heidi](http://www.twitter.com/erikaheidi):  **[The Art of Programming](http://dev-human.com/entries/2014/12/19/the-art-of-programming/)**.
 
 She states:
 
