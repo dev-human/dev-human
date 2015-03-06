@@ -8,14 +8,14 @@ use:
 ---
 # About dev-human
 
-**dev-human** is a collaborative blog created by developers, for developers, focused on **non-technical**, or **lightening** content. Our goal is to promote other aspects
+**dev-human** is a collaborative blog created by developers, for developers, focused on **non-technical**, or **lightning** content. Our goal is to promote other aspects
 of a programmer's life, and work on getting over stereotypes and biased concepts often related to programmers and people involved with IT in general.
 
 ## The principles behind dev-human
 
 1. You are not a developer who happens to be human, you are a human who happens to be a developer.
 We all share this and, as such, we can't neglect our personal improvement, in favor of our technical skills.
-Programming is deeply integrated into our lives, but it cannot represent alone what you are. 
+Programming is deeply integrated into our lives, but it cannot represent alone what you are.
 
 2. Programming requires much more than technical knowledge - it requires patience, creativity, curiosity, among other things that cannot be mimicked by a "robot".
 By improving the human being, you improve the developer.
@@ -34,4 +34,4 @@ We can't make this project successful without the help of other developers who l
 ## The Future
 
 We start simple and small, but we have great plans for the future. We would love to bring **dev-human** to "real-life" with
-a printed edition and, who knows, a conference featuring uniquely lightening talks. Let's see what we can do, since these things don't happen without a lot of help from collaborators :)
+a printed edition and, who knows, a conference featuring uniquely lightning talks. Let's see what we can do, since these things don't happen without a lot of help from collaborators :)
