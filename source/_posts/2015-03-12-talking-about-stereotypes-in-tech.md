@@ -33,6 +33,6 @@ It's about being conscious, actively pondering about your interpretations of the
 Educate yourself on being conscious about your interpretations of the world and the people around you. Don't make assumptions, and more importantly, don't base your communication and behavior towards someone else on stereotyped models.
 
 <img src="/media/posts/feedback.png" class="img img-responsive">
-<br><em><small><center>this is definitely the less useful feedback I ever got for a talk. think twice before basing your communication on stereotypes, this was truly offensive.</center></small></em>
+<br><em><small><center>this is definitely the least useful feedback I ever got for a talk. think twice before basing your communication on stereotypes, this was truly offensive.</center></small></em>
 
 
