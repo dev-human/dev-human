@@ -15,7 +15,7 @@ use:
 
 I recently came across this excellent post from [@sailorhg](https://twitter.com/sailorhg), titled "[Coding Like a Girl](https://medium.com/@sailorhg/coding-like-a-girl-595b90791cce)". If you didn't read it yet, please, do it. It's a very truthful post talking about some very common stereotypes we face, as women, working in tech.
 
-The question that started to bother me was: why are we so strongly driven by stereotypes, and how dangerous this culture is for the future of tech and society as a whole?
+The question that started to bother me was: why are we so strongly driven by stereotypes, and how dangerous this culture is for the future of tech?
 
 The term _stereotype_ is defined as "a widely held but fixed and oversimplified image or idea of a particular type of person or thing". The definition includes _things_, but we know that it's much more about **people**. And why? Well, because people are _complicated_. 
 
