@@ -1,3 +1,19 @@
+
+title: When you are stuck
+authors:
+    - jigalsanders
+categories:
+    - problem solving
+tags:
+    - developers
+    - programmers
+    - productivity
+    - quality
+use:
+    - posts_tags
+    - posts_categories
+
+
 Are you also a person who gets stuck in coding for a lot of time? 
 
 You have this good idea you want to work out and it seems fairly simple. You guestimate to finish it within a week, but when you start working on your little idea you find yourself getting stuck on a technical issue before you know. This has happened to me many times and still happens quite often. It can happen to anyone, not just when starting a new project, but also when you're working in a team and doing some bug fixing.
