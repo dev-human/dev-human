@@ -1,4 +1,4 @@
-
+---
 title: When you are stuck
 authors:
     - jigalsanders
