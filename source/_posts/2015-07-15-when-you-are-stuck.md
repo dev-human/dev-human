@@ -30,8 +30,8 @@ Naturally, the easiest way to handle this type of situation when you get stuck i
 When you are stuck in a piece of code or you're troubleshooting ask yourself the following questions:
 
  - Go back to the basics: do I understand the problem? What issue am I trying to solve? Is the description of the problem clear to me? Very often I find myself deep in the code and then I figure that I really don't understand the problem and I have to take a step back asking myself: "what is actually the problem?".  If you don't know the problem, you obviously can't figure out a solution.
-- Which information am I missing? Do I understand what the desired situation should be? How should the software behave?
-- What do I need to get to the solution? Which information am I missing? And more important: how can I find out what I am missing and who could possibly help me with it.
+ - Which information am I missing? Do I understand what the desired situation should be? How should the software behave?
+ - What do I need to get to the solution? Which information am I missing? And more important: how can I find out what I am missing and who could possibly help me with it.
 
 And last, on a more technical note: when dealing with error messages, ask yourself *Do I really understand this error message?* Very often I found out later that I did not really understand the error message. Reading properly and going back to the code to try and understand the error message will help a lot. 
 
