@@ -58,7 +58,7 @@ of **pride**.
 The team came up with a project to help people with idea's gather feedback in a very early stage, to know if they
 are on the right track. At first I could tell there was a teammember who was at WeCamp last year, because the
 project's scope was limited to realistic proportions. This ended up being a bit demotivating, because what can
-you _actually_ build in three days? But after an additional brainstorm session the energy returned and a better
+you _actually_ build in four days? But after an additional brainstorm session the energy returned and a better
 product evolved.
 
 A lot of effort was put into protecting the potential users of the system - to focus on the positive emotions
