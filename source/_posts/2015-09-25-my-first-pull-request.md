@@ -6,7 +6,8 @@ authors:
 categories:
     - Life and Code
 tags:
-    - opensource
+    - open source
+    - learning
 use:
     - posts_tags
     - posts_categories
@@ -62,7 +63,7 @@ Then I started getting feedback. I got a feedback from [Fabien Potencier](https:
 
 ![Figure 1: Fabien's Feedback](http://i.imgur.com/k3fYvta.png)
 
-The **fourth** pull request was the one. I remember as if it were yesterday: in the morning of April 22, 2013, I got an email from Github saying my pull request was successfully **merged**. I made it to the list of Symfony 2 contributors. Even though my contribution was very simple, my name is there, as you can see in the page <http://symfony.com/contributors/code>. And if you ever get the exception _"The file 'somefile.ext' exceeds your upload_max_filesize ini directive"_, remember: I put it there.
+The **fourth** pull request was the one. I remember as if it were yesterday: in the morning of April 22, 2013, I got an email from Github saying my pull request was successfully **merged**. I made it to the list of Symfony 2 contributors. Even though my contribution was very simple, my name is there, as you can see in the page <http://symfony.com/contributors/code>. And if you ever get the exception _"The file 'somefile.ext' exceeds your upload_max_filesize ini directive"_, remember: I've put it there.
 
 ![Figure 2: PR Merged](http://i.imgur.com/W1DcFid.png)
 
