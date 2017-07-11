@@ -22,7 +22,7 @@ authors:
   erikaheidi:
       name: Erika Heidi
       url: http://erikaheidi.com
-      avatar: https://pbs.twimg.com/profile_images/647028238255001600/0dFPxFeA_400x400.jpg
+      avatar: https://pbs.twimg.com/profile_images/834850731995848706/wv_4GTFs_400x400.jpg
       twitter: http://twitter.com/erikaheidi
       twitter_handle: erikaheidi
       googleplus: https://plus.google.com/102734777555057691872
@@ -31,7 +31,7 @@ authors:
   cordoval:
       name: Luis Cordova
       url: http://pilotci.com
-      avatar: https://pbs.twimg.com/profile_images/498814941738975233/uLlDK3Gl.png
+      avatar: https://abs.twimg.com/sticky/default_profile_images/default_profile_400x400.png
       twitter: http://twitter.com/cordoval
       twitter_handle: cordoval
       github: https://github.com/cordoval
@@ -39,7 +39,7 @@ authors:
   matthiasnoback:
       name: Matthias Noback
       url: http://php-and-symfony.matthiasnoback.nl
-      avatar: https://pbs.twimg.com/profile_images/1591397394/matthias-noback.jpg
+      avatar: https://pbs.twimg.com/profile_images/880742356835856384/E1WaGhQz_400x400.jpg
       twitter: http://twitter.com/matthiasnoback
       twitter_handle: matthiasnoback
       github: https://github.com/matthiasnoback
@@ -55,7 +55,7 @@ authors:
   meadsteve:
       name: Steve Brazier
       url: http://meadsteve.github.io/
-      avatar: https://pbs.twimg.com/profile_images/458936525338587140/bjZT3Y8R_400x400.png
+      avatar: https://pbs.twimg.com/profile_images/668359233923063808/L0mjxE7c_400x400.png
       twitter: http://twitter.com/meadsteve
       twitter_handle: meadsteve
       github: https://github.com/meadsteve
@@ -79,7 +79,7 @@ authors:
   jaytaph:
       name: Joshua Thijssen
       url: http://adayinthelifeof.nl
-      avatar: https://pbs.twimg.com/profile_images/598925666482987009/7vv-s0eI.jpg
+      avatar: https://pbs.twimg.com/profile_images/701138125389746178/TfRdQEpq_400x400.png
       twitter: http://twitter.com/jaytaph
       twitter_handle: jaytaph
       github: https://github.com/jaytaph
@@ -129,12 +129,14 @@ authors:
   vanimurarka:
       name: Vani Murarka
       url: http://www.manaskriti.com/
+      avatar: https://pbs.twimg.com/profile_images/496676045420916741/IWNMAAfK_400x400.jpeg
       twitter: http://twitter.com/vani_tech
       twitter_handle: vani_tech
       github: https://github.com/vanimurarka
       bio: Software Developer, Artist, Writer. Creator of meulib.com
   jigalsanders:
       name: Jigal Sanders
+      avatar: https://pbs.twimg.com/profile_images/673783925328728064/plMWQ9KT_400x400.jpg
       twitter: http://twitter.com/sandersjj
       twitter_handle: sandersjj
       github: https://github.com/sandersjj
@@ -149,6 +151,7 @@ authors:
   squinones:
       name: Samantha Quiñones
       url: https://about.me/samantha.quinones
+      avatar: https://pbs.twimg.com/profile_images/829073884297191424/DOelzSeU_400x400.jpg
       twitter: http://twitter.com/ieatkillerbees
       twitter_handle: ieatkillerbees
       github: https://github.com/squinones
