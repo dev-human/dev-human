@@ -30,8 +30,3 @@ we have similar problems, we have similar stories, and (often) we laugh at the s
 ## How you can help
 
 We can't make this project successful without the help of other developers who like to write and produce content. Please check the [**contributing**]({{site.url}}/docs/contribute) section to find out more on how you can help.
-
-## The Future
-
-We start simple and small, but we have great plans for the future. We would love to bring **dev-human** to "real-life" with
-a printed edition and, who knows, a conference featuring uniquely lightening talks. Let's see what we can do, since these things don't happen without a lot of help from collaborators :)
