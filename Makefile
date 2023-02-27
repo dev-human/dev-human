@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := help
 
-HUGO_RUN := docker compose run -T --rm  hugo
+HUGO_RUN := docker compose run -T --rm hugo
 NODE_RUN := docker compose run -T --rm node
 SERVERLESS_RUN := docker compose run -T --rm serverless
 
@@ -12,7 +12,11 @@ node_modules: package.json package-lock.json # Install npm dependencies specifie
 	 ${NODE_RUN} npm install
 
 .PHONY: tailwind
-tailwind: node_modules # Run tailwind watch so any changes in the templates are detected and rebuilt
+tailwind: node_modules # Run tailwind once to build the index.css file
+	${NODE_RUN} npx tailwindcss -i ./assets/css/input.css -o ./assets/css/index.css --jit
+
+.PHONY: tailwind-watch
+tailwind-watch: node_modules # Run tailwind watch so any changes in the templates are detected and rebuilt
 	${NODE_RUN} npx tailwindcss -i ./assets/css/input.css -o ./assets/css/index.css --jit --watch
 
 .PHONY: hugo-server
@@ -21,14 +25,14 @@ hugo-server: # Run Hugo in development mode, starting a server on http://localho
 	open http://localhost:1313
 
 .PHONY: start
-start: hugo-server tailwind # Start the full development environment
+start: hugo-server tailwind-watch # Start the full development environment
 
 .PHONY: build-staging
-build-staging: # Build the staging website in the build/staging folder
+build-staging: tailwind # Build the staging website in the build/staging folder
 	${HUGO_RUN} build --environment=staging
 
 .PHONY: build-production
-build-production: # Build the staging website in the build/production folder
+build-production: tailwind # Build the staging website in the build/production folder
 	${HUGO_RUN} build --environment=production
 
 .PHONY: sls-deploy-staging
