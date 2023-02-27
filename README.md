@@ -1,30 +1,33 @@
 # dev-human
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/dev-human/dev-human?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 **dev-human** is a collaborative blog created by developers, for developers, focused on non-technical, lightening content.
 Visit the website to get more info: http://dev-human.io .
 
-Powered by [Sculpin](http://sculpin.io).
+# dev-human principles
+
+1. You are not a developer who happens to be human, you are a human who happens to be a developer. We all share this and, as such, we can't neglect our personal involvement, in favor of our technical skills. Programming is deeply integrated into our lives, but it cannot represent alone what you **are**.
+
+2. Programming requires much more than technical knowledge - it requires patience, creativity, curiosity, among other things that cannot be mimicked by a "robot". By improving the human being, you improve the developer.
+
+3. We are still learning how to deal with the Internet and the huge amount of information we are exposed every day. There's not many people, and even less developers, thinking about the implications this overflow can cause to us. We are responsible for what the web is going to be in the future. We should talk about this and other non-technical subjects that will help building better developers.
+
+4. As a community, we are stronger. We share the jargon, the ups and downs of being a developer; we have similar problems, we have similar stories, but everyone has something to add. And when we put all the pieces together, we see the big picture of community.
+
+
+# the dev-human project
+
+A collaborative digital magazine inspired by the hacktivism and the simple notion of "life hacking", for the developers community. A place to share and discuss ideas in some way related to IT, but not technical in nature.
+
+Powered by [Hugo](https://gohugo.io).
 
 ## Contributing
 
-If you want to contribute with articles, please read the relevant section in our website: [Contributing to dev-human](http://dev-human.com/docs/contribute/).
+If you want to contribute with articles, please read the relevant section in our website: [Contributing to dev-human](http://dev-human.io/docs/contribute/).
 
-If you want to run the website locally to preview your post, of if you want to contribute with code and new features, check the following section on how to install Sculpin.
+If you want to run the website locally to preview your post, of if you want to contribute with code and new features, check the following section on how to run Hugo.
 
-Build
------
+```shell
+make start
+```
 
-### If You Already Have Sculpin
-
-    sculpin install
-    sculpin generate --watch --server
-
-Your newly generated clone of sculpin-blog-skeleton is now
-accessible at `http://localhost:8000/`.
-
-### If You Need Sculpin
-
-    curl -O https://download.sculpin.io/sculpin.phar
-    php sculpin.phar install
-    php sculpin.phar generate --watch --server
+This should open a webbrowser on http://localhost:1313/

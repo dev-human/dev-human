@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="flex gap-4 flex-row flex-wrap mt-6">
+    {{ range .Data.Pages.ByTitle }}
+    {{ $author := index .Site.Data.authors .Title }}
+    <div class="flex-auto sm:w-1/2 md:w-1/3 lg:w-1/4 border border-slate-300 md:rounded bg-white text-slate-600 text-slate-400 text-sm p-4">
+        <div class="border-slate-200 grid grid-cols-1 2xl:grid-cols-4 2xl:gap-4 leading-relaxed">
+            <div><img class="rounded-full w-20 h-20 inline-block" src="{{ $author.avatar }}" /></div>
+            <div class="col-span-3">
+                <span class="text-2xl text-slate-800">{{ $author.name }}</span>
+                <span class="block">{{ $author.bio }}</span>
+            </div>
+        </div>
+
+        <div class="mt-2 p-4">
+            ARTICLES
+            <ul class="border-t border-slate-300 list-inside list-none">
+                {{ range .Pages }}
+                <li class="mt-2 truncate">
+                    - <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+
+    </div>
+    {{ end }}
+</div>
+{{ end }}

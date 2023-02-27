@@ -1,0 +1,45 @@
+<nav class="flex flex-wrap items-center justify-between w-full py-4 md:py-0 pr-4 text-lg text-gray-700 bg-white">
+    <div>
+        <a href="/">
+            {{ with resources.Get "img/logo.png" }}
+            <img src="{{ .RelPermalink }}" class="max-h-[70px]">
+            {{ end }}
+        </a>
+    </div>
+
+    <div class="w-full md:flex md:items-center md:w-auto">
+        <ul class="text-base text-gray-700 pt-4 md:flex md:justify-between md:pt-0">
+
+            <li class="border-t border-transparent hover:border-emerald-500 hover:text-emerald-500">
+                <a class="md:p-4 py-2 block" href="/" title="Home">Home</a>
+            </li>
+
+            {{ $currentPage := . }}
+
+            {{ range .Site.Menus.content }}
+            <li class="border-t
+                        {{ if or ($currentPage.IsMenuCurrent "content" .) ($currentPage.HasMenuCurrent "content" .) }}
+                            border-emerald-500 text-emerald-500
+                        {{ else }}
+                            border-transparent hover:border-emerald-500 hover:text-emerald-500
+                        {{ end }}
+            ">
+                <a class="md:p-4 py-2 block" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+            </li>
+            {{ end }}
+
+            <li class="border-t
+                border-transparent hover:border-emerald-500 hover:text-emerald-500
+            ">
+                <a class="md:p-4 py-2 block" href="/authors" title="Authors">Authors</a>
+            </li>
+
+            <li class="border-t
+                border-transparent hover:border-emerald-500 hover:text-emerald-500
+            ">
+                <a class="md:p-4 py-2 block" href="/categories" title="Home">Categories</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>

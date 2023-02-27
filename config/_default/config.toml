@@ -1,0 +1,16 @@
+baseURL = 'https://staging.dev-human.io/'
+languageCode = 'en-us'
+title = 'Dev Human'
+subtitle = 'Non-technical content for humans who code'
+paginate = 12
+sectionPagesMenu = "content"
+buildDrafts = true
+buildFuture = true
+[permalinks]
+    article = '/:year/:month/:title/'
+[frontmatter]
+    date = [':filename', ':default']
+[taxonomies]
+    category = "categories"
+    tag = "tags"
+    author = "authors"

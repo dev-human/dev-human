@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+<div class="flex flex-col bg-center bg-cover bg-no-repeat">
+    <div class="grid place-items-center w-4/5 mx-auto p-10 my-20 sm:my-auto space-y-5 text-center">
+        <img src="img/logo.png">
+        <div class="grid place-items-center sm:w-4/5 lg:w-3/5 mx-auto">
+            <h2 class="text-2xl pt-10 text-gray-700 italic">"dev-human is a collaborative, non-technical blog written by developers. We talk about life and stuff robots can't understand."</h2>
+        </div>
+    </div>
+</div>
+
+<div class="grid lg:grid-cols-3 gap-4">
+
+{{ range first 9 (where .Site.RegularPages "Type" "article").ByDate.Reverse }}
+<div class="border border-slate-300 md:rounded mt-6 last:mb-6 bg-white p-6 text-slate-600">
+    {{ $author := index $.Site.Data.authors ( .Params.authors | default "default") }}
+    {{- if $author.avatar -}}
+    <img class="rounded-full w-12 h-12 inline-block" src="{{ $author.avatar }}" />
+    <span class="ml-2">{{ $author.name }}</span>
+    <span class="ml-2 text-sm text-gray-400">[{{ .Date.Format "2006-01-02" }}]</span>
+    {{- end -}}
+    <div class="text-xl leading-loose"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
+    <div class="t-4 text-slate-400">{{ .Summary }}</div>
+    <div class="mt-4 pt-2 text-sm border-t border-slate-200 text-emerald-500"><a href="{{ .Permalink }}">READ FULL STORY</a></div>
+</div>
+{{ end }}
+</div>
+
+{{ end }}
