@@ -1,0 +1,33 @@
+<div class="grid lg:grid-cols-3 gap-4">
+
+    <div class="p-4 place-content-center text-slate-400 text-sm">
+    {{ with resources.Get "img/logo.png" }}
+    <a href="/"><img src="{{ .RelPermalink }}" class="max-h-[70px] mb-4"></a>
+    {{ end }}
+    <p>
+        <strong>dev-human</strong> is a collaborative, non-technical blog written by developers.
+        We talk about life and stuff robots can't understand.
+    </p>
+    </div>
+
+    <div class="p-4 place-content-center  text-slate-400 text-sm">
+    CATEGORIES
+    <ul class="p-1 border-t border-slate-200">
+        {{ $categories := .Site.GetPage "/categories" }}
+        {{ range $categories.Data.Terms }}
+        <li class="mt-1"><a class="text-emerald-500 hover:text-emerald-700" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+        {{ end }}
+    </ul>
+    </div>
+
+    <div class="p-4 text-slate-400 text-sm">
+        TAGS
+        <ul class="p-1 border-t border-slate-200">
+            {{ $tags := .Site.GetPage "/tags" }}
+            {{ range first 12 $tags.Data.Terms.ByCount }}
+            <li class="py-2 px-4 border border-emerald-500 bg-white hover:bg-emerald-500 text-emerald-500 hover:text-white mt-2 mr-2 inline-block rounded-3xl"><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+            {{ end }}
+        </ul>
+        <div class="mt-4 text-sm border-t border-slate-200 text-emerald-500"><a href="{{ $tags.Permalink }}">All tags</a></div>
+    </div>
+</div>

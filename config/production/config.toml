@@ -1,0 +1,4 @@
+baseURL = 'https://dev-human.io/'
+publishDir = "build/production"
+buildDrafts = false
+buildFuture = false

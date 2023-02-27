@@ -1,0 +1,26 @@
+{
+  "name": "devhuman",
+  "version": "1.0.0",
+  "description": "Dev Human",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-human/dev-human.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-human/dev-human/issues"
+  },
+  "homepage": "https://github.com/dev-human/dev-human#readme",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9",
+    "autoprefixer": "10.4.13",
+    "postcss": "8.4.20",
+    "tailwindcss": "3.2.4",
+    "tw-elements": "^1.0.0-alpha13"
+  }
+}

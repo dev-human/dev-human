@@ -1,0 +1,4 @@
+baseURL = 'https://staging.dev-human.io/'
+publishDir = "build/staging"
+buildDrafts = true
+buildFuture = true

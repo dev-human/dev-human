@@ -1,0 +1,24 @@
+version: '3.2'
+services:
+
+  hugo:
+    image: klakegg/hugo:ext-alpine
+    command: server
+    volumes:
+      - ".:/src"
+    ports:
+      - "1313:1313"
+
+  node:
+    image: node:current-alpine
+    volumes:
+      - ".:/var/www"
+    working_dir: /var/www
+
+  serverless:
+    build: docker/serverless
+    volumes:
+      - ./:/opt/project
+    environment:
+      - AWS_ACCESS_KEY_ID
+      - AWS_SECRET_ACCESS_KEY

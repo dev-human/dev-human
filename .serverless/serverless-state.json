@@ -1,0 +1,596 @@
+{
+  "service": {
+    "service": "dev-human-website",
+    "serviceObject": {
+      "name": "dev-human-website"
+    },
+    "provider": {
+      "name": "aws",
+      "region": "eu-central-1",
+      "runtime": "provided.al2",
+      "deploymentMethod": "direct",
+      "stage": "staging",
+      "tags": {
+        "project-name": "dev-human-website",
+        "repository": "https://github.com/dev-human/dev-human"
+      },
+      "stackTags": {
+        "customer": "dev-human"
+      },
+      "versionFunctions": true,
+      "compiledCloudFormationTemplate": {
+        "AWSTemplateFormatVersion": "2010-09-09",
+        "Description": "The AWS CloudFormation template for this Serverless application",
+        "Resources": {
+          "ServerlessDeploymentBucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+              "BucketEncryption": {
+                "ServerSideEncryptionConfiguration": [
+                  {
+                    "ServerSideEncryptionByDefault": {
+                      "SSEAlgorithm": "AES256"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ServerlessDeploymentBucketPolicy": {
+            "Type": "AWS::S3::BucketPolicy",
+            "Properties": {
+              "Bucket": {
+                "Ref": "ServerlessDeploymentBucket"
+              },
+              "PolicyDocument": {
+                "Statement": [
+                  {
+                    "Action": "s3:*",
+                    "Effect": "Deny",
+                    "Principal": "*",
+                    "Resource": [
+                      {
+                        "Fn::Join": [
+                          "",
+                          [
+                            "arn:",
+                            {
+                              "Ref": "AWS::Partition"
+                            },
+                            ":s3:::",
+                            {
+                              "Ref": "ServerlessDeploymentBucket"
+                            },
+                            "/*"
+                          ]
+                        ]
+                      },
+                      {
+                        "Fn::Join": [
+                          "",
+                          [
+                            "arn:",
+                            {
+                              "Ref": "AWS::Partition"
+                            },
+                            ":s3:::",
+                            {
+                              "Ref": "ServerlessDeploymentBucket"
+                            }
+                          ]
+                        ]
+                      }
+                    ],
+                    "Condition": {
+                      "Bool": {
+                        "aws:SecureTransport": false
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "websiteBucket9032EBB7": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+              "WebsiteConfiguration": {
+                "ErrorDocument": "/404.html",
+                "IndexDocument": "index.html"
+              }
+            },
+            "UpdateReplacePolicy": "Delete",
+            "DeletionPolicy": "Delete"
+          },
+          "websiteBucketPolicyE0AC1822": {
+            "Type": "AWS::S3::BucketPolicy",
+            "Properties": {
+              "Bucket": {
+                "Ref": "websiteBucket9032EBB7"
+              },
+              "PolicyDocument": {
+                "Statement": [
+                  {
+                    "Action": "s3:GetObject",
+                    "Effect": "Allow",
+                    "Principal": {
+                      "AWS": "*"
+                    },
+                    "Resource": {
+                      "Fn::Join": [
+                        "",
+                        [
+                          {
+                            "Fn::GetAtt": [
+                              "websiteBucket9032EBB7",
+                              "Arn"
+                            ]
+                          },
+                          "/*"
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                "Version": "2012-10-17"
+              }
+            }
+          },
+          "websiteResponseFunctionF49D1202": {
+            "Type": "AWS::CloudFront::Function",
+            "Properties": {
+              "FunctionCode": "function handler(event) {\n    var response = event.response;\n    response.headers = Object.assign({}, {\n    \"x-frame-options\": {\n        \"value\": \"SAMEORIGIN\"\n    },\n    \"x-content-type-options\": {\n        \"value\": \"nosniff\"\n    },\n    \"x-xss-protection\": {\n        \"value\": \"1; mode=block\"\n    },\n    \"strict-transport-security\": {\n        \"value\": \"max-age=63072000\"\n    }\n}, response.headers);\n    return response;\n}",
+              "FunctionConfig": {
+                "Comment": "dev-human-website-staging-eu-central-1-website-response",
+                "Runtime": "cloudfront-js-1.0"
+              },
+              "Name": "dev-human-website-staging-eu-central-1-website-response",
+              "AutoPublish": true
+            }
+          },
+          "websiteCDN060D946D": {
+            "Type": "AWS::CloudFront::Distribution",
+            "Properties": {
+              "DistributionConfig": {
+                "Aliases": [
+                  "staging.dev-human.io"
+                ],
+                "Comment": "dev-human-website-staging website website CDN",
+                "CustomErrorResponses": [
+                  {
+                    "ErrorCachingMinTTL": 0,
+                    "ErrorCode": 404,
+                    "ResponseCode": 404,
+                    "ResponsePagePath": "/404.html"
+                  }
+                ],
+                "DefaultCacheBehavior": {
+                  "AllowedMethods": [
+                    "GET",
+                    "HEAD",
+                    "OPTIONS"
+                  ],
+                  "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+                  "Compress": true,
+                  "FunctionAssociations": [
+                    {
+                      "EventType": "viewer-response",
+                      "FunctionARN": {
+                        "Fn::GetAtt": [
+                          "websiteResponseFunctionF49D1202",
+                          "FunctionARN"
+                        ]
+                      }
+                    }
+                  ],
+                  "TargetOriginId": "websiteCDNOrigin173C249FC",
+                  "ViewerProtocolPolicy": "redirect-to-https"
+                },
+                "DefaultRootObject": "index.html",
+                "Enabled": true,
+                "HttpVersion": "http2",
+                "IPV6Enabled": true,
+                "Origins": [
+                  {
+                    "CustomOriginConfig": {
+                      "OriginProtocolPolicy": "http-only",
+                      "OriginSSLProtocols": [
+                        "TLSv1.2"
+                      ]
+                    },
+                    "DomainName": {
+                      "Fn::Select": [
+                        2,
+                        {
+                          "Fn::Split": [
+                            "/",
+                            {
+                              "Fn::GetAtt": [
+                                "websiteBucket9032EBB7",
+                                "WebsiteURL"
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    "Id": "websiteCDNOrigin173C249FC"
+                  }
+                ],
+                "ViewerCertificate": {
+                  "AcmCertificateArn": "arn:aws:acm:us-east-1:033201381223:certificate/2cc611c2-8bbb-43f3-8409-8bb57aabbb96",
+                  "MinimumProtocolVersion": "TLSv1.2_2021",
+                  "SslSupportMethod": "sni-only"
+                }
+              }
+            }
+          }
+        },
+        "Outputs": {
+          "ServerlessDeploymentBucketName": {
+            "Value": {
+              "Ref": "ServerlessDeploymentBucket"
+            },
+            "Export": {
+              "Name": "sls-dev-human-website-staging-ServerlessDeploymentBucketName"
+            }
+          },
+          "websiteBucketName1C4A852B": {
+            "Description": "Name of the bucket that stores the static website.",
+            "Value": {
+              "Ref": "websiteBucket9032EBB7"
+            }
+          },
+          "websiteDomainFCB9350F": {
+            "Description": "Website domain name.",
+            "Value": "staging.dev-human.io"
+          },
+          "websiteCloudFrontCNameBE0CEC1D": {
+            "Description": "CloudFront CNAME.",
+            "Value": {
+              "Fn::GetAtt": [
+                "websiteCDN060D946D",
+                "DomainName"
+              ]
+            }
+          },
+          "websiteDistributionId8ED2D37D": {
+            "Description": "ID of the CloudFront distribution.",
+            "Value": {
+              "Ref": "websiteCDN060D946D"
+            }
+          }
+        }
+      },
+      "coreCloudFormationTemplate": {
+        "AWSTemplateFormatVersion": "2010-09-09",
+        "Description": "The AWS CloudFormation template for this Serverless application",
+        "Resources": {
+          "ServerlessDeploymentBucket": {
+            "Type": "AWS::S3::Bucket",
+            "Properties": {
+              "BucketEncryption": {
+                "ServerSideEncryptionConfiguration": [
+                  {
+                    "ServerSideEncryptionByDefault": {
+                      "SSEAlgorithm": "AES256"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "ServerlessDeploymentBucketPolicy": {
+            "Type": "AWS::S3::BucketPolicy",
+            "Properties": {
+              "Bucket": {
+                "Ref": "ServerlessDeploymentBucket"
+              },
+              "PolicyDocument": {
+                "Statement": [
+                  {
+                    "Action": "s3:*",
+                    "Effect": "Deny",
+                    "Principal": "*",
+                    "Resource": [
+                      {
+                        "Fn::Join": [
+                          "",
+                          [
+                            "arn:",
+                            {
+                              "Ref": "AWS::Partition"
+                            },
+                            ":s3:::",
+                            {
+                              "Ref": "ServerlessDeploymentBucket"
+                            },
+                            "/*"
+                          ]
+                        ]
+                      },
+                      {
+                        "Fn::Join": [
+                          "",
+                          [
+                            "arn:",
+                            {
+                              "Ref": "AWS::Partition"
+                            },
+                            ":s3:::",
+                            {
+                              "Ref": "ServerlessDeploymentBucket"
+                            }
+                          ]
+                        ]
+                      }
+                    ],
+                    "Condition": {
+                      "Bool": {
+                        "aws:SecureTransport": false
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        },
+        "Outputs": {
+          "ServerlessDeploymentBucketName": {
+            "Value": {
+              "Ref": "ServerlessDeploymentBucket"
+            }
+          }
+        }
+      }
+    },
+    "custom": {
+      "staging": {
+        "local_path": "build/staging",
+        "certificate": "arn:aws:acm:us-east-1:033201381223:certificate/2cc611c2-8bbb-43f3-8409-8bb57aabbb96",
+        "redirectToMainDomain": false,
+        "domain": [
+          "staging.dev-human.io"
+        ]
+      },
+      "production": {
+        "local_path": "coming_soon",
+        "certificate": "arn:aws:acm:us-east-1:033201381223:certificate/f0e06be4-fd8e-409a-8acc-5d17be1cecee",
+        "redirectToMainDomain": true,
+        "domain": [
+          "dev-human.io",
+          "www.dev-human.io"
+        ]
+      }
+    },
+    "plugins": [
+      "serverless-lift"
+    ],
+    "pluginsData": {},
+    "functions": {},
+    "resources": {
+      "Resources": {
+        "websiteBucket9032EBB7": {
+          "Type": "AWS::S3::Bucket",
+          "Properties": {
+            "WebsiteConfiguration": {
+              "ErrorDocument": "/404.html",
+              "IndexDocument": "index.html"
+            }
+          },
+          "UpdateReplacePolicy": "Delete",
+          "DeletionPolicy": "Delete"
+        },
+        "websiteBucketPolicyE0AC1822": {
+          "Type": "AWS::S3::BucketPolicy",
+          "Properties": {
+            "Bucket": {
+              "Ref": "websiteBucket9032EBB7"
+            },
+            "PolicyDocument": {
+              "Statement": [
+                {
+                  "Action": "s3:GetObject",
+                  "Effect": "Allow",
+                  "Principal": {
+                    "AWS": "*"
+                  },
+                  "Resource": {
+                    "Fn::Join": [
+                      "",
+                      [
+                        {
+                          "Fn::GetAtt": [
+                            "websiteBucket9032EBB7",
+                            "Arn"
+                          ]
+                        },
+                        "/*"
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "Version": "2012-10-17"
+            }
+          }
+        },
+        "websiteResponseFunctionF49D1202": {
+          "Type": "AWS::CloudFront::Function",
+          "Properties": {
+            "FunctionCode": "function handler(event) {\n    var response = event.response;\n    response.headers = Object.assign({}, {\n    \"x-frame-options\": {\n        \"value\": \"SAMEORIGIN\"\n    },\n    \"x-content-type-options\": {\n        \"value\": \"nosniff\"\n    },\n    \"x-xss-protection\": {\n        \"value\": \"1; mode=block\"\n    },\n    \"strict-transport-security\": {\n        \"value\": \"max-age=63072000\"\n    }\n}, response.headers);\n    return response;\n}",
+            "FunctionConfig": {
+              "Comment": "dev-human-website-staging-eu-central-1-website-response",
+              "Runtime": "cloudfront-js-1.0"
+            },
+            "Name": "dev-human-website-staging-eu-central-1-website-response",
+            "AutoPublish": true
+          }
+        },
+        "websiteCDN060D946D": {
+          "Type": "AWS::CloudFront::Distribution",
+          "Properties": {
+            "DistributionConfig": {
+              "Aliases": [
+                "staging.dev-human.io"
+              ],
+              "Comment": "dev-human-website-staging website website CDN",
+              "CustomErrorResponses": [
+                {
+                  "ErrorCachingMinTTL": 0,
+                  "ErrorCode": 404,
+                  "ResponseCode": 404,
+                  "ResponsePagePath": "/404.html"
+                }
+              ],
+              "DefaultCacheBehavior": {
+                "AllowedMethods": [
+                  "GET",
+                  "HEAD",
+                  "OPTIONS"
+                ],
+                "CachePolicyId": "658327ea-f89d-4fab-a63d-7e88639e58f6",
+                "Compress": true,
+                "FunctionAssociations": [
+                  {
+                    "EventType": "viewer-response",
+                    "FunctionARN": {
+                      "Fn::GetAtt": [
+                        "websiteResponseFunctionF49D1202",
+                        "FunctionARN"
+                      ]
+                    }
+                  }
+                ],
+                "TargetOriginId": "websiteCDNOrigin173C249FC",
+                "ViewerProtocolPolicy": "redirect-to-https"
+              },
+              "DefaultRootObject": "index.html",
+              "Enabled": true,
+              "HttpVersion": "http2",
+              "IPV6Enabled": true,
+              "Origins": [
+                {
+                  "CustomOriginConfig": {
+                    "OriginProtocolPolicy": "http-only",
+                    "OriginSSLProtocols": [
+                      "TLSv1.2"
+                    ]
+                  },
+                  "DomainName": {
+                    "Fn::Select": [
+                      2,
+                      {
+                        "Fn::Split": [
+                          "/",
+                          {
+                            "Fn::GetAtt": [
+                              "websiteBucket9032EBB7",
+                              "WebsiteURL"
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  "Id": "websiteCDNOrigin173C249FC"
+                }
+              ],
+              "ViewerCertificate": {
+                "AcmCertificateArn": "arn:aws:acm:us-east-1:033201381223:certificate/2cc611c2-8bbb-43f3-8409-8bb57aabbb96",
+                "MinimumProtocolVersion": "TLSv1.2_2021",
+                "SslSupportMethod": "sni-only"
+              }
+            }
+          }
+        }
+      },
+      "Outputs": {
+        "websiteBucketName1C4A852B": {
+          "Description": "Name of the bucket that stores the static website.",
+          "Value": {
+            "Ref": "websiteBucket9032EBB7"
+          }
+        },
+        "websiteDomainFCB9350F": {
+          "Description": "Website domain name.",
+          "Value": "staging.dev-human.io"
+        },
+        "websiteCloudFrontCNameBE0CEC1D": {
+          "Description": "CloudFront CNAME.",
+          "Value": {
+            "Fn::GetAtt": [
+              "websiteCDN060D946D",
+              "DomainName"
+            ]
+          }
+        },
+        "websiteDistributionId8ED2D37D": {
+          "Description": "ID of the CloudFront distribution.",
+          "Value": {
+            "Ref": "websiteCDN060D946D"
+          }
+        }
+      }
+    },
+    "configValidationMode": "warn",
+    "serviceFilename": "serverless.yml",
+    "initialServerlessConfig": {
+      "service": "dev-human-website",
+      "custom": {
+        "staging": {
+          "local_path": "build/staging",
+          "certificate": "arn:aws:acm:us-east-1:033201381223:certificate/2cc611c2-8bbb-43f3-8409-8bb57aabbb96",
+          "redirectToMainDomain": false,
+          "domain": [
+            "staging.dev-human.io"
+          ]
+        },
+        "production": {
+          "local_path": "coming_soon",
+          "certificate": "arn:aws:acm:us-east-1:033201381223:certificate/f0e06be4-fd8e-409a-8acc-5d17be1cecee",
+          "redirectToMainDomain": true,
+          "domain": [
+            "dev-human.io",
+            "www.dev-human.io"
+          ]
+        }
+      },
+      "provider": {
+        "name": "aws",
+        "region": "eu-central-1",
+        "runtime": "provided.al2",
+        "deploymentMethod": "direct",
+        "stage": "staging",
+        "tags": {
+          "project-name": "dev-human-website",
+          "repository": "https://github.com/dev-human/dev-human"
+        },
+        "stackTags": {
+          "customer": "dev-human"
+        },
+        "versionFunctions": true
+      },
+      "plugins": {
+        "$ref": "$[\"service\"][\"plugins\"]"
+      },
+      "constructs": {
+        "website": {
+          "type": "static-website",
+          "errorPage": "404.html",
+          "path": "build/staging",
+          "certificate": "arn:aws:acm:us-east-1:033201381223:certificate/2cc611c2-8bbb-43f3-8409-8bb57aabbb96",
+          "domain": "staging.dev-human.io",
+          "redirectToMainDomain": false
+        }
+      }
+    },
+    "layers": {},
+    "isDashboardMonitoringPreconfigured": false
+  },
+  "package": {
+    "artifactDirectoryName": "serverless/dev-human-website/staging/1677460193584-2023-02-27T01:09:53.584Z",
+    "artifact": ""
+  }
+}
