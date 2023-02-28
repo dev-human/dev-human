@@ -19,8 +19,11 @@
                     <div class="p-1 border-t border-slate-200 grid grid-cols-1 2xl:grid-cols-4 2xl:gap-4 leading-relaxed">
                         <div><img class="rounded-full w-20 h-20 inline-block" src="{{ .avatar }}" /></div>
                         <div class="col-span-3">
-                            <span class="text-2xl text-slate-800">{{ .name }}</span>
+                            {{ if .url }}<a href="{{ .url }}" target="_blank">{{ end }}<span class="text-2xl text-slate-800">{{ .name }}</span>{{ if .url }}</a>{{ end }}
                             <span class="block">{{ .bio }}</span>
+                            <div class="flex flex-row gap-3 mt-2">
+                                {{ partial "socials.html" . }}
+                            </div>
                         </div>
                     </div>
                 </div>
