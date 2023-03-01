@@ -13,9 +13,13 @@ tags:
 ---
 
 *“Software design is just theory.”*<br>
+
 *“Design patterns are too academic.”*<br>
+
 *“Writing code is the only way to become a better programmer.”*<br>
+
 *“Just ship it.”*<br>
+
 *“That’s over-designed.”*
 
 
