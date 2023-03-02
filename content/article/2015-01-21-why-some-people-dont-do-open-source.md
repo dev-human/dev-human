@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Why some people don't do Open Source
 authors:
 - gabidavila
