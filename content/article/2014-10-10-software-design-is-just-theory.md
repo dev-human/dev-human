@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "“Software design is just theory”"
 authors:
 - mathiasverraes
