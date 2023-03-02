@@ -12,13 +12,13 @@ tags:
 - legacy
 ---
 
-*“Software design is just theory.”*<br>
+*“Software design is just theory.”*
 
-*“Design patterns are too academic.”*<br>
+*“Design patterns are too academic.”*
 
-*“Writing code is the only way to become a better programmer.”*<br>
+*“Writing code is the only way to become a better programmer.”*
 
-*“Just ship it.”*<br>
+*“Just ship it.”*
 
 *“That’s over-designed.”*
 
