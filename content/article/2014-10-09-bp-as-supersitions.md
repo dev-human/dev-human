@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Best practises as superstitions
 authors:
 - meadsteve

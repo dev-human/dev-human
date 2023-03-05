@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Taking all criticism in a positive light
 authors:
 - meadsteve
