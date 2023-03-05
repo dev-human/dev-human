@@ -1,5 +1,4 @@
 ---
-draft: true
 title: The Eternal Loop
 description: The eternal loop is a revision of the eternal return concept. Imagine our life is a loop, with some nested loops inside it. We have control over our nested loops, but we don't know what's coming next, in the bigger scope.
 authors:

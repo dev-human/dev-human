@@ -1,5 +1,4 @@
 ---
-draft: true
 title: We need to talk about stereotypes in tech
 authors:
 - erikaheidi

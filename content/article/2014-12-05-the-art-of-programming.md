@@ -1,5 +1,4 @@
 ---
-draft: true
 title: The Art of Programming
 authors:
 - erikaheidi

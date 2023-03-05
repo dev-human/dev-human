@@ -1,5 +1,4 @@
 ---
-draft: true
 title: "There's always a first time: the story of my first Pull Request"
 source: https://www.phparch.com/magazine/2014-2/may/
 authors:

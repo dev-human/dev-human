@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Hello Humans!
 authors: 
 - erikaheidi
