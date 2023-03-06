@@ -1,5 +1,4 @@
 ---
-draft: true
 title: The Right Way
 authors:
 - igorw

@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Want To Be More Productive? Work Less!
 authors:
 - skoop

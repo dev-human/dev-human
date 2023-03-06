@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Creativity is the Pipeline
 authors:
 - erikaheidi

@@ -1,5 +1,4 @@
 ---
-draft: true
 title: The Communication Gap
 description: Language can be very limited, and when it comes to the Internet, even more noises are interfering in our communication. This leads to a lot of misunderstandings...
 authors:

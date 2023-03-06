@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Investing your Time
 description: Time is a very precious resource - very ephemeral and limited, and yet sometimes we struggle to direct it into something useful.
 authors:

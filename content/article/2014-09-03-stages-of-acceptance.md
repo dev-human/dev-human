@@ -1,5 +1,4 @@
 ---
-draft: true
 title: The 3 stages of accepting there's a problem and you are part of it
 authors:
 - erikaheidi

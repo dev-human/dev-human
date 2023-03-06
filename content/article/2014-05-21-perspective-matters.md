@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Perspective Matters
 description: About empathy, seeing each other's perspectives and overcoming fears
 authors:

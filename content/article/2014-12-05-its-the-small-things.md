@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Never Underestimate the Power of Small Things
 description: Usually undersestimated and considered a "second class citizen", something superfluous, details have a lot of power, and they can have big impact in the long term.
 authors:

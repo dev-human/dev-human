@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Dev Almighty
 authors:
 - erikaheidi
