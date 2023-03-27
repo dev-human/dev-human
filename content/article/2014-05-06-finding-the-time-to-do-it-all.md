@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Finding the time to do it all
 authors: 
 - matthiasnoback
