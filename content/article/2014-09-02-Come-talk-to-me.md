@@ -1,5 +1,4 @@
 ---
-draft: true
 title: Come talk to me, because I won't come over to talk to you.
 authors:
 - jaytaph
