@@ -8,13 +8,14 @@ custom:
     domain:
       - staging.dev-human.io
   production:
-    #local_path: build/production
-    local_path: coming_soon
-    certificate: arn:aws:acm:us-east-1:033201381223:certificate/f0e06be4-fd8e-409a-8acc-5d17be1cecee
+    local_path: build/production
+    certificate: arn:aws:acm:us-east-1:033201381223:certificate/43981011-8ba0-4290-8f88-3811a12ee1ea
     redirectToMainDomain: true
     domain:
       - dev-human.io
       - www.dev-human.io
+      - devhuman.io
+      - www.devhuman.io
 
 provider:
   name: aws
