@@ -8,8 +8,7 @@ custom:
     domain:
       - staging.dev-human.io
   production:
-    #local_path: build/production
-    local_path: coming_soon
+    local_path: build/production
     certificate: arn:aws:acm:us-east-1:033201381223:certificate/43981011-8ba0-4290-8f88-3811a12ee1ea
     redirectToMainDomain: true
     domain:
