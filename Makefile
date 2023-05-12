@@ -12,11 +12,12 @@ node_modules: package.json package-lock.json # Install npm dependencies specifie
 	 ${NODE_RUN} npm install
 
 .PHONY: tailwind
-tailwind: node_modules # Run tailwind once to build the index.css file
+tailwind: node_modules assets/css/index.css # Run tailwind once to build the index.css file
+assets/css/index.css: assets/css/input.css
 	${NODE_RUN} npx tailwindcss -i ./assets/css/input.css -o ./assets/css/index.css --jit
 
 .PHONY: tailwind-watch
-tailwind-watch: node_modules # Run tailwind watch so any changes in the templates are detected and rebuilt
+tailwind-watch: tailwind # Run tailwind watch so any changes in the templates are detected and rebuilt
 	${NODE_RUN} npx tailwindcss -i ./assets/css/input.css -o ./assets/css/index.css --jit --watch
 
 .PHONY: hugo-server
@@ -25,7 +26,7 @@ hugo-server: # Run Hugo in development mode, starting a server on http://localho
 	open http://localhost:1313
 
 .PHONY: start
-start: hugo-server tailwind-watch # Start the full development environment
+start: tailwind hugo-server tailwind-watch # Start the full development environment
 
 .PHONY: build-staging
 build-staging: tailwind # Build the staging website in the build/staging folder
