@@ -12,7 +12,7 @@ tags:
 
 ---
 
-_Warning: This post has nothing to do with the [movie by the same title](https://www.imdb.com/title/tt11286314/). I 
+_Warning: This post has nothing to do with the {{< external-link "movie by the same title" "https://www.imdb.com/title/tt11286314/" >}}. I 
 do highly recommend watching it though._
 
 In the short time I've been alive in this world I've gone through a handful of profound changes in perspective. The 
@@ -22,15 +22,15 @@ or rather the lack of it.
 My general feeling of being unproductive is not new. I've been struggling with it for a long time. There are many 
 bestseller books on the topic, like 
 
-- [Eat that Frog](https://www.bol.com/nl/nl/p/eat-that-frog/9200000059295510/)
-- [Getting Things Done](https://www.bol.com/nl/nl/p/getting-things-done/9200000107679892/)
-- [The 4-Hour Workweek](https://www.bol.com/nl/nl/p/the-4-hour-workweek/1001004006428399/)
+- {{< external-link "Eat that Frog" "https://www.bol.com/nl/nl/p/eat-that-frog/9200000059295510/" >}}
+- {{< external-link "Getting Things Done" "https://www.bol.com/nl/nl/p/getting-things-done/9200000107679892/" >}}
+- {{< external-link "The 4-Hour Workweek" "https://www.bol.com/nl/nl/p/the-4-hour-workweek/1001004006428399/" >}}
 - The 5 AM club *.
 - etc..
 
-Given the [success of the genre](https://www.bol.com/nl/nl/s/?page=1&searchtext=procrastination&view=list&filter_N=8292+11209+14033&rating=all) 
-I'm certainly not alone in this feeling. I've watched the TED talk 
-[Inside the mind of a master procrastinator](https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator) 
+Given the {{< external-link "success of the genre" "https://www.bol.com/nl/nl/s/?page=1&searchtext=procrastination&view=list&filter_N=8292+11209+14033&rating=all" >}} 
+I'm certainly not alone in this feeling. I've watched the TED talk
+{{< external-link "Inside the mind of a master procrastinator" "https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator" >}} 
 by Tim Urban more than a few times (usually when I needed to be doing something else). It's hilarious. And it's 
 also very relatable.
 
@@ -39,8 +39,8 @@ _*I don't recommend "The 5 AM club", I found it a very shallow book_
 ## How to be more productive
 
 What those books and talks have in common is that they all focus on the "how" of productivity. They give you tips on
-changing your routine or your habits. And this has certainly helped me in the past - 
-[Atomic Habits](https://www.bol.com/nl/nl/p/atomic-habits/9200000075132383/) by James Clear has had a profound effect 
+changing your routine or your habits. And this has certainly helped me in the past -
+{{< external-link "Atomic Habits" "https://www.bol.com/nl/nl/p/atomic-habits/9200000075132383/" >}} by James Clear has had a profound effect 
 on how I arrange my day. I have a morning routine that I follow consistently and I have been able to stack a few habits 
 on top of each other. I've read many books starting from a "read 15-minutes at breakfast" rule.
 
