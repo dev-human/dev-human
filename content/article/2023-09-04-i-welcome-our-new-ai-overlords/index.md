@@ -75,18 +75,18 @@ driven by the egos of the "invited ones".
 ## It is really such a problem?
 
 This particular example is one of the less problematic ones. There is a very slight chance that the generated 
-content + comments will yield some value to someone. More vile examples use generative AI to purposefully cheap people
+content + comments will yield some value to someone. More vile examples use generative AI to purposefully cheat people
 out of their life savings. These pages do not seem to do any harm, right? But it will not take long 
 for the commenters to jump on to the automatic generation bandwagon. In fact, I'm 100% sure that some commenters are 
 already automating their comments. And then the whole thing degenerates into fully auto-generated content taking 
 up resources in the form of actual generation by AI, storage and bandwidth, indexation by search engines and the 
-wasted attention of people who are looking for actual information. The problem is becomes worse as all this content 
+wasted attention of people who are looking for actual information. The problem becomes worse as all this content 
 will at some point be ingested as real training data for an AI system in the future.
 
 Henry Thoreau wrote in Walden:
 
 > It is not the tailor alone who is the ninth part of a man; it is as much the preacher, and the merchant, and the 
-> farmer. Where is this division of labor to end? and what object does it finally serve? No doubt another may also 
+> farmer. Where is this division of labor to end? And what object does it finally serve? No doubt another may also 
 > think for me; but it is not therefore desirable that he should do so to the exclusion of my thinking for myself.
 
 It seems visionary that he wrote in 1854 about how "thinking" would be replaceable. Granted, he was probably not 
