@@ -74,6 +74,12 @@
     "websiteBucket9032EBB7": {
       "Type": "AWS::S3::Bucket",
       "Properties": {
+        "PublicAccessBlockConfiguration": {
+          "BlockPublicAcls": false,
+          "BlockPublicPolicy": false,
+          "IgnorePublicAcls": false,
+          "RestrictPublicBuckets": false
+        },
         "WebsiteConfiguration": {
           "ErrorDocument": "/404.html",
           "IndexDocument": "index.html"
@@ -119,13 +125,13 @@
     "websiteResponseFunctionF49D1202": {
       "Type": "AWS::CloudFront::Function",
       "Properties": {
+        "AutoPublish": true,
         "FunctionCode": "function handler(event) {\n    var response = event.response;\n    response.headers = Object.assign({}, {\n    \"x-frame-options\": {\n        \"value\": \"SAMEORIGIN\"\n    },\n    \"x-content-type-options\": {\n        \"value\": \"nosniff\"\n    },\n    \"x-xss-protection\": {\n        \"value\": \"1; mode=block\"\n    },\n    \"strict-transport-security\": {\n        \"value\": \"max-age=63072000\"\n    }\n}, response.headers);\n    return response;\n}",
         "FunctionConfig": {
           "Comment": "dev-human-website-staging-eu-central-1-website-response",
           "Runtime": "cloudfront-js-1.0"
         },
-        "Name": "dev-human-website-staging-eu-central-1-website-response",
-        "AutoPublish": true
+        "Name": "dev-human-website-staging-eu-central-1-website-response"
       }
     },
     "websiteCDN060D946D": {
