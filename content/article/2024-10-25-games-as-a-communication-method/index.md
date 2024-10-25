@@ -26,7 +26,7 @@ whole team agrees that the change is good. Maybe you have a series of test-suite
 Whatever you base your confidence on, it's still a feeling which is hard to convey with words. Any _new_ team member
 will need to experience this feeling themselves before they can understand it.
 
-## Explain it to me like I'm five
+## Explain it to me like I'm a five year old
 
 Let's say you come from a job with very high confidence, backed up by a lot of automated tests. You join a new team
 where they have no tests at all. This team might not release on a friday because it makes issues harder to fix 
