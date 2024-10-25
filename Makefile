@@ -46,4 +46,4 @@ sls-deploy-production: build-production # Deploy to AWS (dev-human.io)
 
 .PHONY: sls-shell
 sls-shell: # Run a serverless interactive console
-	docker-compose run -ti --env SLS_INTERACTIVE_SETUP_ENABLE=1 --rm serverless bash
+	docker compose run -ti --env SLS_INTERACTIVE_SETUP_ENABLE=1 --rm serverless bash
