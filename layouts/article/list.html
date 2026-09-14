@@ -12,7 +12,8 @@
     <span class="ml-2 text-sm text-gray-400">[{{ .Date.Format "2006-01-02" }}]</span>
     {{- end -}}
     <div class="text-2xl leading-loose"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
-    <div class="t-4">{{ .Summary }}</div>
+    <div class="text-slate-400 text-lg italic">{{ .Description }}</div>
+    <div class="mt-4">{{ .Summary }}</div>
     <div class="mt-4 pt-2 text-sm border-t border-slate-200 text-emerald-500"><a href="{{ .Permalink }}">READ FULL STORY</a></div>
 </div>
 {{ end }}

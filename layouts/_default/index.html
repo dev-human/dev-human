@@ -11,7 +11,7 @@
 
 <div class="grid lg:grid-cols-3 gap-4">
 
-{{ range first 9 (where .Site.RegularPages "Type" "article").ByDate.Reverse }}
+{{ range first 12 (where .Site.RegularPages "Type" "article").ByDate.Reverse }}
 <div class="border border-slate-300 md:rounded mt-6 last:mb-6 bg-white p-6 text-slate-600">
     {{ $author := index $.Site.Data.authors ( .Params.authors | default "default") }}
     {{- if $author.avatar -}}
@@ -20,7 +20,7 @@
     <span class="ml-2 text-sm text-gray-400">[{{ .Date.Format "2006-01-02" }}]</span>
     {{- end -}}
     <div class="text-xl leading-loose"><a href="{{ .Permalink }}">{{ .Title }}</a></div>
-    <div class="t-4 text-slate-400">{{ .Summary }}</div>
+    <div class="t-4 text-slate-400 italic">{{ .Description }}</div>
     <div class="mt-4 pt-2 text-sm border-t border-slate-200 text-emerald-500"><a href="{{ .Permalink }}">READ FULL STORY</a></div>
 </div>
 {{ end }}
