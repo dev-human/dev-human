@@ -36,14 +36,6 @@ build-staging: tailwind # Build the staging website in the build/staging folder
 build-production: tailwind # Build the staging website in the build/production folder
 	${HUGO_RUN} build --environment=production
 
-.PHONY: sls-deploy-staging
-sls-deploy-staging: build-staging # Deploy to AWS (staging.dev-human.io)
-	${SERVERLESS_RUN} serverless deploy --stage=staging --verbose
-
-.PHONY: sls-deploy-production
-sls-deploy-production: build-production # Deploy to AWS (dev-human.io)
-	${SERVERLESS_RUN} serverless deploy --stage=production --verbose
-
-.PHONY: sls-shell
-sls-shell: # Run a serverless interactive console
-	docker compose run -ti --env SLS_INTERACTIVE_SETUP_ENABLE=1 --rm serverless bash
+.PHONY: release
+release: build-production # Deploy the site to production
+	rsync -avz build/production/ websites@vps01:/home/websites/devhuman/
