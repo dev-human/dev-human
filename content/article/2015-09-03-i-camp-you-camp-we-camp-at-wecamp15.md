@@ -15,7 +15,7 @@ use:
 ---
 
 Coming to WeCamp this year was a no-brainer, after my experiences
-[last year](http://dev-human.com/entries/2014/08/31/a-journey-of-emotion-at-wecamp-14/). My write-up sparked some
+[last year](/2014/08/a-journey-of-emotion-at-wecamp14/). My write-up sparked some
 worry with my coach [Mike van Riel](https://twitter.com/mvriel) (among others) because none of what I wrote about
 was visible at the surface. But I believe that the most important bit of the article might have been snowed under:
 
@@ -41,13 +41,13 @@ part of the concept of WeCamp.
 ### So, how did it turn out?
 
 Well, my worry was not needed. I got a team of eager participants, all of which very much involved in self-reflection
-and self-improvement. Connecting with them was no problem at all. There where completely different goals set by
+and self-improvement. Connecting with them was no problem at all. There were completely different goals set by
 individual members and yet, before the week was over, they had communicated their goals to each other. I mean _way_
 beyond the superficial goals one states to a bunch of strangers on the first day. Deeply personal fears like
 impostor syndrome and such. They made sure each of the team members met their goals and looked into themselves
 and opened up to be able to grow.
 
-One of the other coaches said that there where not just five coaches on the island, but 25.
+One of the other coaches said that there were not just five coaches on the island, but 25.
 This was true as far as I can tell. It was absolutely true in my team, where they all took a part of the
 job and spread their knowledge. Or pushed a team member to greater heights. That, I think, is my biggest source
 of **pride**.
@@ -55,7 +55,7 @@ of **pride**.
 ### What did my team end up building?
 
 The team came up with a project to help people with idea's gather feedback in a very early stage, to know if they
-are on the right track. At first I could tell there was a teammember who was at WeCamp last year, because the
+are on the right track. At first, I could tell there was a team member who was at WeCamp last year, because the
 project's scope was limited to realistic proportions. This ended up being a bit demotivating, because what can
 you _actually_ build in four days? But after an additional brainstorm session the energy returned and a better
 product evolved.
@@ -67,7 +67,7 @@ involved in bringing ideas into reality. Their core values where:
 - Let a response to an idea revolve around emotions instead of a scale of boring numbers.
 - Provide information about the type of audience that is positive about an idea.
 
-In essence, I think they where solving their own issues because adding your
+In essence, I think they were solving their own issues because adding your
 input to a project is exactly the same scary thing. They discovered that their project was feeding their own
 creativity.
 
